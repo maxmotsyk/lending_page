@@ -199,8 +199,6 @@ header{
                     color:#b5b5b6;
                 }
 
-                
-
                 .header_content_button{
                     display: flex;
                     justify-content: center;
@@ -227,5 +225,96 @@ header{
             }
         }
        
+    }
+}
+
+section{
+    #features_row{
+        display: flex;
+        justify-content: center;
+        margin: 120px 0 300px ;
+        .col-md-6{
+            display: flex;
+            flex-direction: column;
+            padding-left: 100px;
+            margin-top: 120px ;
+
+            img{
+                width: 40px;
+                margin-bottom: 50px;
+            }
+
+            h3{
+                color:#b5b5b6;
+                padding-bottom: 50px;
+            }
+
+            p{
+                color:#b5b5b6;
+            }
+        }
+    }
+
+    #iphone_featur_row{
+        display: flex ;
+        justify-content: flex-end;
+        position: relative;
+
+        #background_img_iphone_6{
+            position: absolute;
+            left: 0;
+            z-index: -2;
+            width: 680px;
+        }
+        .col-md-6{
+            display: flex;
+            flex-direction: column;
+            padding-left: 100px;
+
+            h2{
+                margin:  0 0 80px;
+            }
+
+            p{
+                color:#b5b5b6;
+                margin:  0 0 80px;
+            }
+
+            .button_area{
+                display: flex;
+                align-items:center;
+
+                .buttone_one{
+                    display: flex;
+                    justify-content: center;
+                    align-items:center;
+                    margin: 0 30px 0 0;
+                    background-color:#267df4;
+                    border-radius: 30px;
+                    width: 200px;
+                    height: 40px;
+
+                    p{
+                        color:#ffffff;
+                        margin: 0 50px 0 0;
+                    }
+
+                    a{
+                        position: absolute;
+                        width: 200px;
+                        height: 30px;
+                    }
+                }
+
+                .buttone_two{
+                    width: 150px;
+                    height: 45px;
+                    border-radius: 30px;
+                    border: 1px solid #dadada;
+                    background-color:#eef0f3;
+                    color:#26272d;
+                }
+            }
+        }
     }
 }

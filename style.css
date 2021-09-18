@@ -282,4 +282,123 @@ header .container-fluid .row #header_content_col .header_content_button p {
   margin: 0 0 0 10px;
   color: #26272d;
 }
+
+section #features_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 120px 0 300px;
+}
+
+section #features_row .col-md-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 100px;
+  margin-top: 120px;
+}
+
+section #features_row .col-md-6 img {
+  width: 40px;
+  margin-bottom: 50px;
+}
+
+section #features_row .col-md-6 h3 {
+  color: #b5b5b6;
+  padding-bottom: 50px;
+}
+
+section #features_row .col-md-6 p {
+  color: #b5b5b6;
+}
+
+section #iphone_featur_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+section #iphone_featur_row #background_img_iphone_6 {
+  position: absolute;
+  left: 0;
+  z-index: -2;
+  width: 680px;
+}
+
+section #iphone_featur_row .col-md-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 100px;
+}
+
+section #iphone_featur_row .col-md-6 h2 {
+  margin: 0 0 80px;
+}
+
+section #iphone_featur_row .col-md-6 p {
+  color: #b5b5b6;
+  margin: 0 0 80px;
+}
+
+section #iphone_featur_row .col-md-6 .button_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section #iphone_featur_row .col-md-6 .button_area .buttone_one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 30px 0 0;
+  background-color: #267df4;
+  border-radius: 30px;
+  width: 200px;
+  height: 40px;
+}
+
+section #iphone_featur_row .col-md-6 .button_area .buttone_one p {
+  color: #ffffff;
+  margin: 0 50px 0 0;
+}
+
+section #iphone_featur_row .col-md-6 .button_area .buttone_one a {
+  position: absolute;
+  width: 200px;
+  height: 30px;
+}
+
+section #iphone_featur_row .col-md-6 .button_area .buttone_two {
+  width: 150px;
+  height: 45px;
+  border-radius: 30px;
+  border: 1px solid #dadada;
+  background-color: #eef0f3;
+  color: #26272d;
+}
 /*# sourceMappingURL=style.css.map */
