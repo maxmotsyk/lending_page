@@ -259,12 +259,13 @@ section{
         display: flex ;
         justify-content: flex-end;
         position: relative;
+        margin: 0 0 300px;
 
         #background_img_iphone_6{
             position: absolute;
             left: 0;
             z-index: -2;
-            width: 680px;
+            width: 650px;
         }
         .col-md-6{
             display: flex;
@@ -315,6 +316,40 @@ section{
                     color:#26272d;
                 }
             }
+        }
+    }
+
+    #map_featur_row{
+        position: relative;
+        display: flex;
+        align-items:center;
+        margin: 0 0 300px;
+        .col-md-6{
+            display: flex;
+            flex-direction: column;
+            padding-left: 100px;
+
+            h2{
+                margin:  0 0 80px;
+            }
+
+            p{
+                color:#b5b5b6;
+                margin:  0 0 80px;
+            }
+
+            .patners_area{
+                img{
+                    margin: 0 30px 0 0;
+                }
+            }
+        }
+
+        #img_map{
+            position: absolute;
+            right: 0;
+            width: 50%;
+            z-index: -2;
         }
     }
 }
