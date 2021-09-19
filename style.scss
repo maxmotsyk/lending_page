@@ -352,4 +352,32 @@ section{
             z-index: -2;
         }
     }
+
+    #iphone_screens_row_1{
+        display: flex;
+        justify-content: center;
+
+        .col-md-6{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items:center;
+
+            h2{
+                padding: 0 0 25px;
+            }
+
+            span{
+                width: 55px;
+                height: 2px;
+                background-color:#267df4;
+                margin: 0 0 25px;
+            }
+
+            P{
+                color:#b5b5b6;
+                padding: 0 0 25px;
+            }
+        }
+    }
 }

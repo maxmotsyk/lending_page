@@ -444,4 +444,45 @@ section #map_featur_row #img_map {
   width: 50%;
   z-index: -2;
 }
+
+section #iphone_screens_row_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section #iphone_screens_row_1 .col-md-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section #iphone_screens_row_1 .col-md-6 h2 {
+  padding: 0 0 25px;
+}
+
+section #iphone_screens_row_1 .col-md-6 span {
+  width: 55px;
+  height: 2px;
+  background-color: #267df4;
+  margin: 0 0 25px;
+}
+
+section #iphone_screens_row_1 .col-md-6 P {
+  color: #b5b5b6;
+  padding: 0 0 25px;
+}
 /*# sourceMappingURL=style.css.map */
