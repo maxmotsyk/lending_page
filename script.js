@@ -19,16 +19,17 @@ byrgerDoActive(iconMenu);
 
 let sliders = document.querySelectorAll('.screen');
 let slider_mass = [];
-console.log(sliders);
-for(let i = 0; i < sliders.length; i++ ){
-    slider_mass[i] = sliders[i].src;
-    sliders[i].remove();
-}
-
-console.log(slider_mass);
-
 let step = 0;
 let offset = 0;
+
+function copySrc(sliders,slider_mass){
+    for(let i = 0; i < sliders.length; i++ ){
+        slider_mass[i] = sliders[i].src;
+        sliders[i].remove();
+    }
+}
+copySrc(sliders,slider_mass)
+
 
 function drow(){
    let img =  document.createElement('img');
