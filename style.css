@@ -527,7 +527,7 @@ section #iphone_screens_row_2 #iphone {
 }
 
 section #iphone_screens_row_2 .screenImg {
-  -webkit-transition: all ease 1s;
-  transition: all ease 1s;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 /*# sourceMappingURL=style.css.map */

@@ -46,13 +46,26 @@ function fillingCol(img_src_mass){
     }
 }
 
-function left(){
-    let temp;
+function refreshImgSrc(){
+    for(let i = 0; i < img_src_mass.length; i++){
+        setTimeout(function(){
+        document.querySelectorAll('.screenImg')[i].src = img_src_mass[i];
+    },150)
+    }
 }
 
+function left(){
+    let temp = img_src_mass[0];
+    img_src_mass.shift();
+    img_src_mass.push(temp);
+      
+    refreshImgSrc();
+}
 imgInMass(img,img_src_mass);
 // colInMass(col_mass);
 fillingCol(img_src_mass);
+
+document.onclick = left;
 
 
 
