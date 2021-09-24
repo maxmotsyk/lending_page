@@ -17,23 +17,42 @@ byrgerDoActive(iconMenu);
 
 // slider
 
-let sliders = document.querySelectorAll('.screen');
-let slider_mass = [];
-let step = 0;
-let offset = 0;
+let img = document.querySelectorAll('.screenImg');
+let img_src_mass = [];
+// let col_mass = [];
 
-function copySrc(sliders,slider_mass){
-    for(let i = 0; i < sliders.length; i++ ){
-        slider_mass[i] = sliders[i].src;
-        sliders[i].remove();
+// function colInMass(col_mass){
+//     let col = document.querySelectorAll('.col-md-2.screen');
+
+//     for(let i = 0; i < col.length;i++){
+//         col_mass[i] = col;
+//     }
+// }
+
+function imgInMass(img,img_src_mass){
+
+    for(let i = 0; i < img.length; i++ ){
+        img_src_mass[i] = img[i].src;
+        img[i].remove();
     }
 }
-copySrc(sliders,slider_mass)
 
-
-function drow(){
-   let img =  document.createElement('img');
-   img.src = slider_mass[step];
-   img.classList.add('screen');
-   img.style
+function fillingCol(img_src_mass){
+    for(let i = 0; i < 5 ;i++){
+        let img = document.createElement('img');
+        img.classList.add('screenImg');
+        img.src = img_src_mass[i];
+        document.querySelectorAll('.col-md-2.screen')[i].appendChild(img);
+    }
 }
+
+function left(){
+    let temp;
+}
+
+imgInMass(img,img_src_mass);
+// colInMass(col_mass);
+fillingCol(img_src_mass);
+
+
+

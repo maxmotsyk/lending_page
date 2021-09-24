@@ -498,21 +498,36 @@ section #iphone_screens_row_2 {
           justify-content: center;
 }
 
-section #iphone_screens_row_2 .iphone {
-  position: relative;
+section #iphone_screens_row_2 .col-md-2.screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section #iphone_screens_row_2 #iphone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 360px;
   height: 730px;
   background-image: url("img/section/iPhone.png");
   background-size: cover;
 }
 
-section #iphone_screens_row_2 .iphone .screen {
-  width: 320px;
-  height: 570px;
-  position: absolute;
+section #iphone_screens_row_2 .screenImg {
   -webkit-transition: all ease 1s;
   transition: all ease 1s;
-  left: 0;
-  top: 0;
 }
 /*# sourceMappingURL=style.css.map */
