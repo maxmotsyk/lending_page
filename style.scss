@@ -385,6 +385,7 @@ section{
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0 0 300px;
         
         .col-12{
             display: flex;
@@ -427,5 +428,46 @@ section{
         .col-12::-webkit-scrollbar {
             width: 0;
           }
+    }
+
+    #ready_to_buy_row{
+
+        .col-md-12{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #send_id_col{
+            .send_id{
+                display: flex;
+                justify-content: space-between;
+                width: 370px;
+                height: 50px;
+
+                input{
+                    border:none;
+                }
+
+                button{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 50px 0 50px;
+                    width: 150px;
+                    height: 45px;
+                    border-radius: 30px;
+                    border:none;
+                    background-color:#6fc754;
+            
+                    p{
+                        padding: 0;
+                        margin: 0 0 0 10px;
+                        color:#26272d;
+                    }
+                }
+
+            }
+        }
     }
 }

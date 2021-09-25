@@ -496,6 +496,7 @@ section #iphone_screens_row_2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 0 300px;
 }
 
 section #iphone_screens_row_2 .col-12 {
@@ -556,5 +557,56 @@ section #iphone_screens_row_2 .col-12 .screenImg {
 
 section #iphone_screens_row_2 .col-12::-webkit-scrollbar {
   width: 0;
+}
+
+section #ready_to_buy_row .col-md-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section #ready_to_buy_row #send_id_col .send_id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 370px;
+  height: 50px;
+}
+
+section #ready_to_buy_row #send_id_col .send_id input {
+  border: none;
+}
+
+section #ready_to_buy_row #send_id_col .send_id button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px 0 50px;
+  width: 150px;
+  height: 45px;
+  border-radius: 30px;
+  border: none;
+  background-color: #6fc754;
+}
+
+section #ready_to_buy_row #send_id_col .send_id button p {
+  padding: 0;
+  margin: 0 0 0 10px;
+  color: #26272d;
 }
 /*# sourceMappingURL=style.css.map */
