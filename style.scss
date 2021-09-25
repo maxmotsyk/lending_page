@@ -385,27 +385,47 @@ section{
         display: flex;
         align-items: center;
         justify-content: center;
-
-        .col-md-2.screen{
+        
+        .col-12{
             display: flex;
             justify-content: center;
-            align-items: center;
+            overflow-x: scroll;
+            width: auto;
+            
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                white-space: nowrap;
+                margin: 0 60px 0 60px;
+            }
+    
+            #iphone{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 304px ;
+                height: 621px;
+                background-image:url('img/section/iPhone.png');
+                background-position:center;
+                background-size:cover;
+              
+                img{
+                    box-shadow: none;
+                }
+            }
+    
+            .screenImg{
+                width: 260px;
+                height: 455px;
+                transition: all ease 0.5s;
+                box-shadow: 4px 4px 22px 0px rgba(34, 60, 80, 0.11);
+     
+            }
         }
 
-        #iphone{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 360px ;
-            height: 730px;
-            background-image:url('img/section/iPhone.png');
-            background-size:cover;
-        }
-
-        .screenImg{
-            transition: all ease 0.5s; 
-        }
-
-
+        .col-12::-webkit-scrollbar {
+            width: 0;
+          }
     }
 }

@@ -498,19 +498,18 @@ section #iphone_screens_row_2 {
           justify-content: center;
 }
 
-section #iphone_screens_row_2 .col-md-2.screen {
+section #iphone_screens_row_2 .col-12 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  overflow-x: scroll;
+  width: auto;
 }
 
-section #iphone_screens_row_2 #iphone {
+section #iphone_screens_row_2 .col-12 .c {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -520,14 +519,42 @@ section #iphone_screens_row_2 #iphone {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 360px;
-  height: 730px;
+  white-space: nowrap;
+  margin: 0 60px 0 60px;
+}
+
+section #iphone_screens_row_2 .col-12 #iphone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 304px;
+  height: 621px;
   background-image: url("img/section/iPhone.png");
+  background-position: center;
   background-size: cover;
 }
 
-section #iphone_screens_row_2 .screenImg {
+section #iphone_screens_row_2 .col-12 #iphone img {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+section #iphone_screens_row_2 .col-12 .screenImg {
+  width: 260px;
+  height: 455px;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
+  -webkit-box-shadow: 4px 4px 22px 0px rgba(34, 60, 80, 0.11);
+          box-shadow: 4px 4px 22px 0px rgba(34, 60, 80, 0.11);
+}
+
+section #iphone_screens_row_2 .col-12::-webkit-scrollbar {
+  width: 0;
 }
 /*# sourceMappingURL=style.css.map */

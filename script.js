@@ -30,27 +30,15 @@ let img_src_mass = [];
 // }
 
 function imgInMass(img,img_src_mass){
-
     for(let i = 0; i < img.length; i++ ){
         img_src_mass[i] = img[i].src;
-        img[i].remove();
-    }
-}
-
-function fillingCol(img_src_mass){
-    for(let i = 0; i < 5 ;i++){
-        let img = document.createElement('img');
-        img.classList.add('screenImg');
-        img.src = img_src_mass[i];
-        document.querySelectorAll('.col-md-2.screen')[i].appendChild(img);
     }
 }
 
 function refreshImgSrc(){
     for(let i = 0; i < img_src_mass.length; i++){
-        setTimeout(function(){
+       
         document.querySelectorAll('.screenImg')[i].src = img_src_mass[i];
-    },150)
     }
 }
 
@@ -61,11 +49,26 @@ function left(){
       
     refreshImgSrc();
 }
+
+function right(){
+    let temp = img_src_mass[4];
+    img_src_mass.pop();
+    img_src_mass.unshift(temp);
+
+    refreshImgSrc();
+}
 imgInMass(img,img_src_mass);
 // colInMass(col_mass);
-fillingCol(img_src_mass);
 
-document.onclick = left;
+document.getElementById("iphone_screens_row_2").onwheel = function(event){
+    if(event.deltaY > 0){
+        left();
+    }
+    else{
+        right()
+    }
+    return false;
+}
 
 
 
