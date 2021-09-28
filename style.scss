@@ -16,7 +16,7 @@ a,p{
     color:#26272d;
 }
 
-h1,h2,h3{
+h1,h2,h3,h4{
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     color:#26272d;
@@ -31,6 +31,7 @@ ul ,li{
 input,textarea {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
+    color:#26272d;
 	outline: none;
 }
 
@@ -178,7 +179,7 @@ header{
         }
     }
 
-    .container-fluid{
+    .container-fluid.one{
         .row{
             display: flex;
             justify-content: center;
@@ -431,7 +432,6 @@ section{
     }
 
     #ready_to_buy_row{
-
         .col-md-12{
             display: flex;
             justify-content: center;
@@ -439,13 +439,19 @@ section{
         }
 
         #send_id_col{
+            margin: 40px 0 40px;
             .send_id{
                 display: flex;
+                border: 1px solid #b5b5b6;
+                border-radius: 30px;
+                padding: 7px;
                 justify-content: space-between;
                 width: 370px;
-                height: 50px;
+                
 
                 input{
+                    margin-left: 10px;
+                    background-color:#fbfbfb;
                     border:none;
                 }
 
@@ -453,7 +459,6 @@ section{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin: 50px 0 50px;
                     width: 150px;
                     height: 45px;
                     border-radius: 30px;
@@ -462,11 +467,56 @@ section{
             
                     p{
                         padding: 0;
-                        margin: 0 0 0 10px;
-                        color:#26272d;
+                        margin: 0 15px 0 0;
+                        color:#ffffff;
                     }
                 }
 
+            }
+        }
+    }
+
+    #App_store_col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h4{
+            font-size: 14px;
+            margin: 0 0 20px;
+            color:#b5b5b6;
+        }
+
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px 10px 20px;
+            margin: 0 0 10px;
+            border:none;
+            border-radius: 30px;
+            background-color:#26272d;
+
+            img{
+                margin: 0 15px 0 0;
+            }
+            
+            .text{
+                display: flex;
+                flex-direction: column;
+                p,h3{
+                    color:#ffffff;
+                    margin: 0;
+                }
+    
+                p{
+                    font-size: 10px;
+                }
+                
+                h3{
+                    font-size: 16px;
+                }
             }
         }
     }

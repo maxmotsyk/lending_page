@@ -16,7 +16,7 @@ a, p {
   color: #26272d;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
   color: #26272d;
@@ -31,6 +31,7 @@ ul, li {
 input, textarea {
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
+  color: #26272d;
   outline: none;
 }
 
@@ -571,18 +572,26 @@ section #ready_to_buy_row .col-md-12 {
           align-items: center;
 }
 
+section #ready_to_buy_row #send_id_col {
+  margin: 40px 0 40px;
+}
+
 section #ready_to_buy_row #send_id_col .send_id {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 1px solid #b5b5b6;
+  border-radius: 30px;
+  padding: 7px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 370px;
-  height: 50px;
 }
 
 section #ready_to_buy_row #send_id_col .send_id input {
+  margin-left: 10px;
+  background-color: #fbfbfb;
   border: none;
 }
 
@@ -596,7 +605,6 @@ section #ready_to_buy_row #send_id_col .send_id button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 50px 0 50px;
   width: 150px;
   height: 45px;
   border-radius: 30px;
@@ -606,7 +614,73 @@ section #ready_to_buy_row #send_id_col .send_id button {
 
 section #ready_to_buy_row #send_id_col .send_id button p {
   padding: 0;
-  margin: 0 0 0 10px;
-  color: #26272d;
+  margin: 0 15px 0 0;
+  color: #ffffff;
+}
+
+section #App_store_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section #App_store_col h4 {
+  font-size: 14px;
+  margin: 0 0 20px;
+  color: #b5b5b6;
+}
+
+section #App_store_col button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 20px 10px 20px;
+  margin: 0 0 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #26272d;
+}
+
+section #App_store_col button img {
+  margin: 0 15px 0 0;
+}
+
+section #App_store_col button .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section #App_store_col button .text p, section #App_store_col button .text h3 {
+  color: #ffffff;
+  margin: 0;
+}
+
+section #App_store_col button .text p {
+  font-size: 10px;
+}
+
+section #App_store_col button .text h3 {
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
