@@ -218,7 +218,7 @@ header .navbar #menu_right_col .menu_right_button img {
   margin: 0 0 3px;
 }
 
-header .container-fluid .row {
+header .container-fluid.one .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,7 +228,7 @@ header .container-fluid .row {
   margin-top: 120px;
 }
 
-header .container-fluid .row #header_content_col {
+header .container-fluid.one .row #header_content_col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,16 +245,16 @@ header .container-fluid .row #header_content_col {
           justify-content: center;
 }
 
-header .container-fluid .row #header_content_col h1 {
+header .container-fluid.one .row #header_content_col h1 {
   font-size: 50px;
 }
 
-header .container-fluid .row #header_content_col p {
+header .container-fluid.one .row #header_content_col p {
   padding: 40px 0 0 0;
   color: #b5b5b6;
 }
 
-header .container-fluid .row #header_content_col .header_content_button {
+header .container-fluid.one .row #header_content_col .header_content_button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,13 +272,13 @@ header .container-fluid .row #header_content_col .header_content_button {
   background-color: #eef0f3;
 }
 
-header .container-fluid .row #header_content_col .header_content_button a {
+header .container-fluid.one .row #header_content_col .header_content_button a {
   width: 150px;
   height: 45px;
   position: absolute;
 }
 
-header .container-fluid .row #header_content_col .header_content_button p {
+header .container-fluid.one .row #header_content_col .header_content_button p {
   padding: 0;
   margin: 0 0 0 10px;
   color: #26272d;
@@ -682,5 +682,32 @@ section #App_store_col button .text p {
 
 section #App_store_col button .text h3 {
   font-size: 16px;
+}
+
+section #custumers_row #custumers_img_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section #custumers_row #custumers_img_col #row_left, section #custumers_row #custumers_img_col #row_right {
+  width: 25px;
+}
+
+section #custumers_row #custumers_img_col .sliders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section #custumers_row #custumers_img_col .sliders .slide img {
+  width: 110px;
+  margin: 0 50px 0 50px;
 }
 /*# sourceMappingURL=style.css.map */

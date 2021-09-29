@@ -520,4 +520,27 @@ section{
             }
         }
     }
+
+    #custumers_row{
+        #custumers_img_col{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            #row_left,#row_right{
+                width: 25px;
+            }
+
+            .sliders{
+                display: flex;
+    
+                .slide{
+                    img{
+                        width: 110px;
+                        margin: 0 50px 0 50px;
+                    }
+                }
+            }
+        }
+    }
 }
