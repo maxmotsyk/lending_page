@@ -17,11 +17,10 @@ byrgerDoActive(iconMenu);
 
 // slider
 
-// do class for sliders
-
 let img = document.querySelectorAll('.screenImg');
 let img_src_mass = [];
 let img_src_human = [];
+
 
 function imgInMass(img,img_src_mass){
     for(let i = 0; i < img.length; i++ ){
@@ -62,11 +61,47 @@ document.getElementById("iphone_screens_row_2").onwheel = function(event){
     return false;
 }
 
+// do class for sliders
+// class Slider {
+    
+//     constructor (class_id_img){
+//         this.class_id_img = class_id_img;
+//         this.img_src_mass = [];
+//     }
+
+//     imgInMass(){
+//         for(let i = 0; i < this.class_id_img.length; i++ ){
+//             this.img_src_mass[i] = this.class_id_img[i].src;
+//         }
+//     }
+
+//     left(){
+//         let temp = this.img_src_mass[0];
+//         this.img_src_mass.shift();
+//         this.img_src_mass.push(temp);
+          
+//         refreshImgSrc();
+//     }
+    
+//     right(){
+//         let temp = this.img_src_mass[this.img_src_mass.length -1];
+//         this.img_src_mass.pop();
+//         this.img_src_mass.unshift(temp);
+    
+//         this.refreshImgSrc();
+//     }
+
+//     refreshImgSrc(){
+//         for(let i = 0; i < this.img_src_mass.length; i++){
+//             this.class_id_img[i].src = this.img_src_mass[i];
+//         }
+//     }
+// }
 
 // let img_humans = document.querySelectorAll('#humans');
-// console.log(img_humans);
+// const slider2 = new Slider(img_humans);
 
 // document.getElementById('row_left').addEventListener("click",function(e){
-//     imgInMass(img_humans,img_src_human);
-//     left('#humans');
+//     slider2.imgInMass();
+//     slider2.left();
 // });
