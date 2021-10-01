@@ -17,91 +17,72 @@ byrgerDoActive(iconMenu);
 
 // slider
 
-let img = document.querySelectorAll('.screenImg');
-let img_src_mass = [];
-let img_src_human = [];
 
 
-function imgInMass(img,img_src_mass){
-    for(let i = 0; i < img.length; i++ ){
-        img_src_mass[i] = img[i].src;
+
+// do class for sliders
+class Slider {
+    
+    constructor (class_id_img){
+        this.class_id_img = class_id_img;
+        this.img_src_mass = [];
+    }
+
+    imgInMass(){
+        for(let i = 0; i < this.class_id_img.length; i++ ){
+            this.img_src_mass[i] = this.class_id_img[i].src;
+        }
+    }
+
+    left(){
+        let temp = this.img_src_mass[0];
+        this.img_src_mass.shift();
+        this.img_src_mass.push(temp);
+          
+        this.refreshImgSrc();
+    }
+    
+    right(){
+        let temp = this.img_src_mass[this.img_src_mass.length -1];
+        this.img_src_mass.pop();
+        this.img_src_mass.unshift(temp);
+    
+        this.refreshImgSrc();
+    }
+
+    refreshImgSrc(){
+        for(let i = 0; i < this.img_src_mass.length; i++){
+            this.class_id_img[i].src = this.img_src_mass[i];
+        }
     }
 }
 
-function refreshImgSrc(class_img){
-    for(let i = 0; i < img_src_mass.length; i++){
-        document.querySelectorAll(class_img)[i].src = img_src_mass[i];
-    }
-}
+let img_screen = document.querySelectorAll('.screenImg');
+const slider1 = new Slider(img_screen);
 
-function left(class_img){
-    let temp = img_src_mass[0];
-    img_src_mass.shift();
-    img_src_mass.push(temp);
-      
-    refreshImgSrc(class_img);
-}
-
-function right(class_img){
-    let temp = img_src_mass[img_src_mass.length -1];
-    img_src_mass.pop();
-    img_src_mass.unshift(temp);
-
-    refreshImgSrc(class_img);
-}
 
 document.getElementById("iphone_screens_row_2").onwheel = function(event){
-    imgInMass(img,img_src_mass);
+    slider1.imgInMass();
     if(event.deltaY > 0){
-        left('.screenImg');
+        slider1.left()
     }
     else{
-        right('.screenImg')
+        slider1.right();
     }
     return false;
 }
 
-// do class for sliders
-// class Slider {
-    
-//     constructor (class_id_img){
-//         this.class_id_img = class_id_img;
-//         this.img_src_mass = [];
-//     }
 
-//     imgInMass(){
-//         for(let i = 0; i < this.class_id_img.length; i++ ){
-//             this.img_src_mass[i] = this.class_id_img[i].src;
-//         }
-//     }
+let img_humans = document.querySelectorAll('#humans');
+const slider2 = new Slider(img_humans);
 
-//     left(){
-//         let temp = this.img_src_mass[0];
-//         this.img_src_mass.shift();
-//         this.img_src_mass.push(temp);
-          
-//         refreshImgSrc();
-//     }
-    
-//     right(){
-//         let temp = this.img_src_mass[this.img_src_mass.length -1];
-//         this.img_src_mass.pop();
-//         this.img_src_mass.unshift(temp);
-    
-//         this.refreshImgSrc();
-//     }
 
-//     refreshImgSrc(){
-//         for(let i = 0; i < this.img_src_mass.length; i++){
-//             this.class_id_img[i].src = this.img_src_mass[i];
-//         }
-//     }
-// }
+document.getElementById('row_left').addEventListener("click",function(e){
+    slider2.imgInMass();
+    slider2.left();
+});
 
-// let img_humans = document.querySelectorAll('#humans');
-// const slider2 = new Slider(img_humans);
-
-// document.getElementById('row_left').addEventListener("click",function(e){
-//     slider2.imgInMass();
-//     slider2.left();
-// });
+document.getElementById('row_right').addEventListener("click",function(e){
+    slider2.imgInMass();
+    slider2.right();
+});
