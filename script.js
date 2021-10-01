@@ -17,9 +17,6 @@ byrgerDoActive(iconMenu);
 
 // slider
 
-
-
-
 // do class for sliders
 class Slider {
     
