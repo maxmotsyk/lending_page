@@ -497,7 +497,7 @@ section #iphone_screens_row_2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 0 300px;
+  margin: 0 0 200px;
 }
 
 section #iphone_screens_row_2 .col-12 {
@@ -718,6 +718,15 @@ section #custumers_row #custumers_img_col .sliders {
   display: flex;
 }
 
+section #custumers_row #custumers_img_col .sliders .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 section #custumers_row #custumers_img_col .sliders .slide img {
   opacity: 0.2;
   width: 110px;
@@ -726,7 +735,7 @@ section #custumers_row #custumers_img_col .sliders .slide img {
 
 section #custumers_row #custumers_img_col .sliders .slide.main img {
   opacity: 1;
-  width: 115px;
+  width: 150px;
 }
 
 section #custumers_row #fedbacke_col {
@@ -738,7 +747,7 @@ section #custumers_row #fedbacke_col {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 section #custumers_row #fedbacke_col p {
@@ -754,5 +763,52 @@ section #custumers_row #fedbacke_col h3 {
 
 section #custumers_row #fedbacke_col h4 {
   font-size: 12px;
+}
+
+section #plan_row {
+  margin: 300px 0 0;
+}
+
+section #plan_row #plan_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section #plan_row #plan_col h1 {
+  margin: 0 0 80px;
+}
+
+section #plan_row #plan_col .area_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section #plan_row #plan_col .area_button h1 {
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+section #plan_row #plan_col h3 {
+  font-size: 20px;
+  color: #b5b5b6;
+}
+
+section #plan_row #plan_col P {
+  margin: 40px 0 0;
+  color: #b5b5b6;
+}
+
+section #plan_row #plan_col P a {
+  color: #267df4;
 }
 /*# sourceMappingURL=style.css.map */
