@@ -617,5 +617,49 @@ section{
                 }
             }
         }
+
+        #card_col{
+            display: flex;
+            .card1,.card2{
+                width: 341px;
+                display: flex;
+                align-items:center;
+                flex-direction: column;
+                text-align: center;
+
+                h1{
+                    font-size: 27px;
+                    font-weight: 400;
+                }
+
+                button{
+                    width: 65px;
+                    height: 27px;
+                    border-radius: 40px;
+                    background-color:#fbfbfb;
+                    border: 1px solid #b5b5b6;
+                    margin: 31px 0 80px;
+                    p{
+                        font-size: 14px;
+                        margin: 0;
+                    }
+                }
+
+                h3{
+                    font-size: 20px;
+                    color: #b5b5b6;
+                    margin: 0 0 50px;
+                }
+
+                h4{
+                    font-size: 14px;
+                }
+            }
+
+            .card1{
+                background-color:#ffffff;
+                padding: 50px 0 50px;
+            }
+        }
     }
 }

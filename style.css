@@ -811,4 +811,59 @@ section #plan_row #plan_col P {
 section #plan_row #plan_col P a {
   color: #267df4;
 }
+
+section #plan_row #card_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section #plan_row #card_col .card1, section #plan_row #card_col .card2 {
+  width: 341px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+section #plan_row #card_col .card1 h1, section #plan_row #card_col .card2 h1 {
+  font-size: 27px;
+  font-weight: 400;
+}
+
+section #plan_row #card_col .card1 button, section #plan_row #card_col .card2 button {
+  width: 65px;
+  height: 27px;
+  border-radius: 40px;
+  background-color: #fbfbfb;
+  border: 1px solid #b5b5b6;
+  margin: 31px 0 80px;
+}
+
+section #plan_row #card_col .card1 button p, section #plan_row #card_col .card2 button p {
+  font-size: 14px;
+  margin: 0;
+}
+
+section #plan_row #card_col .card1 h3, section #plan_row #card_col .card2 h3 {
+  font-size: 20px;
+  color: #b5b5b6;
+  margin: 0 0 50px;
+}
+
+section #plan_row #card_col .card1 h4, section #plan_row #card_col .card2 h4 {
+  font-size: 14px;
+}
+
+section #plan_row #card_col .card1 {
+  background-color: #ffffff;
+  padding: 50px 0 50px;
+}
 /*# sourceMappingURL=style.css.map */
