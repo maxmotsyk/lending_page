@@ -816,6 +816,12 @@ section #plan_row #card_col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section #plan_row #card_col .card1, section #plan_row #card_col .card2 {
@@ -826,10 +832,14 @@ section #plan_row #card_col .card1, section #plan_row #card_col .card2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 20px;
   text-align: center;
 }
 
@@ -842,7 +852,7 @@ section #plan_row #card_col .card1 button, section #plan_row #card_col .card2 bu
   width: 65px;
   height: 27px;
   border-radius: 40px;
-  background-color: #fbfbfb;
+  background-color: none;
   border: 1px solid #b5b5b6;
   margin: 31px 0 80px;
 }
@@ -864,6 +874,14 @@ section #plan_row #card_col .card1 h4, section #plan_row #card_col .card2 h4 {
 
 section #plan_row #card_col .card1 {
   background-color: #ffffff;
-  padding: 50px 0 50px;
+  -webkit-box-shadow: 13px 10px 33px 3px rgba(34, 60, 80, 0.14);
+          box-shadow: 13px 10px 33px 3px rgba(34, 60, 80, 0.14);
+  height: 550px;
+}
+
+section #plan_row #card_col .card2 {
+  background-color: #ebebed;
+  height: 500px;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */

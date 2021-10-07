@@ -620,11 +620,15 @@ section{
 
         #card_col{
             display: flex;
+            justify-content: center;
+            align-items: center;
             .card1,.card2{
                 width: 341px;
                 display: flex;
                 align-items:center;
+                justify-content: center;
                 flex-direction: column;
+                border-radius:20px;
                 text-align: center;
 
                 h1{
@@ -636,7 +640,7 @@ section{
                     width: 65px;
                     height: 27px;
                     border-radius: 40px;
-                    background-color:#fbfbfb;
+                    background-color:none;
                     border: 1px solid #b5b5b6;
                     margin: 31px 0 80px;
                     p{
@@ -658,7 +662,14 @@ section{
 
             .card1{
                 background-color:#ffffff;
-                padding: 50px 0 50px;
+                box-shadow: 13px 10px 33px 3px rgba(34, 60, 80, 0.14);
+                height: 550px;
+            }
+
+            .card2{
+                background-color:#ebebed;
+                height: 500px;
+                z-index: -1;
             }
         }
     }
