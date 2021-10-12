@@ -660,17 +660,18 @@ section{
                 }
             }
 
-            .card1{
+            .card1,.card2.active{
                 background-color:#ffffff;
                 box-shadow: 13px 10px 33px 3px rgba(34, 60, 80, 0.14);
                 height: 550px;
             }
-
-            .card2{
+        
+            .card1.unactive,.card2{
                 background-color:#ebebed;
                 height: 500px;
                 z-index: -1;
             }
+
         }
     }
 }

@@ -83,3 +83,11 @@ document.getElementById('row_right').addEventListener("click",function(e){
     slider2.imgInMass();
     slider2.right();
 });
+
+
+let card2 = document.querySelector('.card1');
+console.log(card2);
+
+card2.onmouseenter = function() {
+    console.log('sosi');
+}

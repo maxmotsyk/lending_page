@@ -872,16 +872,23 @@ section #plan_row #card_col .card1 h4, section #plan_row #card_col .card2 h4 {
   font-size: 14px;
 }
 
-section #plan_row #card_col .card1 {
+section #plan_row #card_col .card1, section #plan_row #card_col .card2.active {
   background-color: #ffffff;
   -webkit-box-shadow: 13px 10px 33px 3px rgba(34, 60, 80, 0.14);
           box-shadow: 13px 10px 33px 3px rgba(34, 60, 80, 0.14);
   height: 550px;
 }
 
-section #plan_row #card_col .card2 {
+section #plan_row #card_col .card1.unactive, section #plan_row #card_col .card2 {
   background-color: #ebebed;
   height: 500px;
   z-index: -1;
+}
+
+section #plan_row #card_col .card2.active {
+  background-color: #ffffff;
+  -webkit-box-shadow: 13px 10px 33px 3px rgba(34, 60, 80, 0.14);
+          box-shadow: 13px 10px 33px 3px rgba(34, 60, 80, 0.14);
+  height: 550px;
 }
 /*# sourceMappingURL=style.css.map */
