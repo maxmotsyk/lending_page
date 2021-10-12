@@ -85,9 +85,17 @@ document.getElementById('row_right').addEventListener("click",function(e){
 });
 
 
-let card2 = document.querySelector('.card1');
-console.log(card2);
+// movement of cards
+let card2 = document.querySelector('.card2');
 
-card2.onmouseenter = function() {
-    console.log('sosi');
-}
+card2.addEventListener("mouseover",function(e){
+    let card1 = document.querySelector('.card1');
+    card2.classList = ('card2 active');
+    card1.classList = ('card1 unactive');
+});
+
+card2.addEventListener("mouseout",function(e){
+    let card1 = document.querySelector('.card1');
+    card2.classList = ('card2');
+    card1.classList = ('card1');
+});
