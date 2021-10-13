@@ -747,6 +747,7 @@ section{
             justify-content: center;
             align-items: center;
             height:560px;
+
             .card1,.card2{
                 width: 341px;
                 display: flex;
@@ -998,4 +999,66 @@ footer{
             }
         }
     }
+}
+
+@media screen and (max-width: 1199px) {
+    #card_col{
+        .card1,.card2{
+            button{
+                margin: 31px 0 60px !important;
+            }
+        }
+        .card1,.card2.active{
+                height: 480px !important;
+        }
+
+        .card1.unactive,.card2{
+            height: 430px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #custumers_img_col{
+        .slide{
+            img{
+                margin: 0 40px 0 40px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px){
+
+    #features_row{
+        .col-md-6{
+            padding: 0px !important;
+        }
+    }
+    
+    #iphone_featur_row{
+        display: flex !important;
+        justify-content: center !important;
+        align-items:center !important;
+        #background_img_iphone_6{
+            display: none !important;
+        }
+        .col-md-6{
+            padding: 0px !important;
+        }
+    }
+    
+    #map_featur_row{
+        display: flex !important;
+        justify-content: center !important;
+        align-items:center !important;
+        #img_map{
+            display: none !important;
+        }
+
+        .col-md-6{
+            padding: 0px !important;
+        }
+    }
+
 }
