@@ -201,6 +201,8 @@ header .navbar #menu_right_col .menu_right_button {
   height: 40px;
   border-radius: 30px;
   background-color: #267df4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 header .navbar #menu_right_col .menu_right_button a {
@@ -216,6 +218,14 @@ header .navbar #menu_right_col .menu_right_button p {
 
 header .navbar #menu_right_col .menu_right_button img {
   margin: 0 0 3px;
+}
+
+header .navbar #menu_right_col .menu_right_button:hover {
+  background-color: #267cf4d7;
+}
+
+header .navbar #menu_right_col .menu_right_button:active {
+  background-color: #267cf4d7;
 }
 
 header .container-fluid.one .row {
@@ -250,6 +260,7 @@ header .container-fluid.one .row #header_content_col h1 {
 }
 
 header .container-fluid.one .row #header_content_col p {
+  white-space: nowrap;
   padding: 40px 0 0 0;
   color: #b5b5b6;
 }
@@ -270,6 +281,8 @@ header .container-fluid.one .row #header_content_col .header_content_button {
   border-radius: 30px;
   border: 1px solid #dadada;
   background-color: #eef0f3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 header .container-fluid.one .row #header_content_col .header_content_button a {
@@ -282,6 +295,14 @@ header .container-fluid.one .row #header_content_col .header_content_button p {
   padding: 0;
   margin: 0 0 0 10px;
   color: #26272d;
+}
+
+header .container-fluid.one .row #header_content_col .header_content_button:hover {
+  background-color: #dadadae5;
+}
+
+header .container-fluid.one .row #header_content_col .header_content_button:active {
+  background-color: #dadadae5;
 }
 
 section #features_row {
@@ -334,8 +355,9 @@ section #iphone_featur_row {
 section #iphone_featur_row #background_img_iphone_6 {
   position: absolute;
   left: 0;
+  top: 0;
   z-index: -2;
-  width: 650px;
+  width: 50%;
 }
 
 section #iphone_featur_row .col-md-6 {
@@ -382,6 +404,8 @@ section #iphone_featur_row .col-md-6 .button_area .buttone_one {
   border-radius: 30px;
   width: 200px;
   height: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 section #iphone_featur_row .col-md-6 .button_area .buttone_one p {
@@ -395,6 +419,34 @@ section #iphone_featur_row .col-md-6 .button_area .buttone_one a {
   height: 30px;
 }
 
+section #iphone_featur_row .col-md-6 .button_area .buttone_one:hover {
+  background-color: #eef0f3;
+  border: 1px solid #dadada;
+}
+
+section #iphone_featur_row .col-md-6 .button_area .buttone_one:hover p {
+  color: #26272d;
+}
+
+section #iphone_featur_row .col-md-6 .button_area .buttone_one:hover img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+section #iphone_featur_row .col-md-6 .button_area .buttone_one:active {
+  background-color: #eef0f3;
+  border: 1px solid #dadada;
+}
+
+section #iphone_featur_row .col-md-6 .button_area .buttone_one:active p {
+  color: #26272d;
+}
+
+section #iphone_featur_row .col-md-6 .button_area .buttone_one:active img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
 section #iphone_featur_row .col-md-6 .button_area .buttone_two {
   width: 150px;
   height: 45px;
@@ -402,6 +454,20 @@ section #iphone_featur_row .col-md-6 .button_area .buttone_two {
   border: 1px solid #dadada;
   background-color: #eef0f3;
   color: #26272d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section #iphone_featur_row .col-md-6 .button_area .buttone_two:hover {
+  border: none;
+  background-color: #267df4;
+  color: #ffffff;
+}
+
+section #iphone_featur_row .col-md-6 .button_area .buttone_two:active {
+  border: none;
+  background-color: #267df4;
+  color: #ffffff;
 }
 
 section #map_featur_row {
@@ -610,12 +676,22 @@ section #ready_to_buy_row #send_id_col .send_id button {
   border-radius: 30px;
   border: none;
   background-color: #6fc754;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 section #ready_to_buy_row #send_id_col .send_id button p {
   padding: 0;
   margin: 0 15px 0 0;
   color: #ffffff;
+}
+
+section #ready_to_buy_row #send_id_col .send_id button:hover {
+  background-color: #6fc754c4;
+}
+
+section #ready_to_buy_row #send_id_col .send_id button:active {
+  background-color: #6fc754c4;
 }
 
 section #App_store_col {
@@ -641,6 +717,7 @@ section #App_store_col h4 {
 }
 
 section #App_store_col button {
+  height: 54px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -655,6 +732,8 @@ section #App_store_col button {
   border: none;
   border-radius: 30px;
   background-color: #26272d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 section #App_store_col button img {
@@ -684,7 +763,40 @@ section #App_store_col button .text h3 {
   font-size: 16px;
 }
 
+section #App_store_col button:hover {
+  background-color: #fbfbfb;
+  border: 1px solid #26272d;
+}
+
+section #App_store_col button:hover img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+section #App_store_col button:hover .text p, section #App_store_col button:hover .text h3 {
+  color: #26272d;
+}
+
+section #App_store_col button:active {
+  background-color: #fbfbfb;
+  border: 1px solid #26272d;
+}
+
+section #App_store_col button:active img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+section #App_store_col button:active .text p, section #App_store_col button:active .text h3 {
+  color: #26272d;
+}
+
 section #custumers_row #custumers_img_col {
+  height: 136px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -710,6 +822,24 @@ section #custumers_row #custumers_img_col #row_left, section #custumers_row #cus
           justify-content: center;
   border: none;
   background-color: #fbfbfb;
+}
+
+section #custumers_row #custumers_img_col #row_right:hover img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+section #custumers_row #custumers_img_col #row_right:active img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+section #custumers_row #custumers_img_col #row_left:active img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0.5;
 }
 
 section #custumers_row #custumers_img_col .sliders {
@@ -740,6 +870,8 @@ section #custumers_row #custumers_img_col .sliders .slide.main img {
   width: 150px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-filter: drop-shadow(19px 8px 6px rgba(34, 60, 80, 0.082));
+          filter: drop-shadow(19px 8px 6px rgba(34, 60, 80, 0.082));
 }
 
 section #custumers_row #fedbacke_col {
@@ -862,11 +994,15 @@ section #plan_row #card_col .card1 button, section #plan_row #card_col .card2 bu
   background-color: none;
   border: 1px solid #b5b5b6;
   margin: 31px 0 80px;
+  padding: 0;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 section #plan_row #card_col .card1 button p, section #plan_row #card_col .card2 button p {
   font-size: 14px;
   margin: 0;
+  padding: 0;
 }
 
 section #plan_row #card_col .card1 h3, section #plan_row #card_col .card2 h3 {
@@ -884,12 +1020,22 @@ section #plan_row #card_col .card1, section #plan_row #card_col .card2.active {
   -webkit-box-shadow: 13px 10px 33px 3px rgba(34, 60, 80, 0.14);
           box-shadow: 13px 10px 33px 3px rgba(34, 60, 80, 0.14);
   height: 550px;
-  z-index: 6;
+  z-index: 5;
+}
+
+section #plan_row #card_col .card1 button, section #plan_row #card_col .card2.active button {
+  background-color: #ffffff;
 }
 
 section #plan_row #card_col .card1.unactive, section #plan_row #card_col .card2 {
   background-color: #ebebed;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   height: 500px;
+}
+
+section #plan_row #card_col .card1.unactive button, section #plan_row #card_col .card2 button {
+  background-color: #ebebed;
 }
 
 footer #suscribe_row .col-md-12 {
@@ -942,12 +1088,22 @@ footer #suscribe_row #send_id_col .send_id button {
   border-radius: 30px;
   border: none;
   background-color: #6fc754;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 footer #suscribe_row #send_id_col .send_id button p {
   padding: 0;
   margin: 0 15px 0 0;
   color: #ffffff;
+}
+
+footer #suscribe_row #send_id_col .send_id button:hover {
+  background-color: #6fc754c4;
+}
+
+footer #suscribe_row #send_id_col .send_id button:active {
+  background-color: #6fc754c4;
 }
 
 footer #footer_menu_row {
@@ -975,6 +1131,7 @@ footer #footer_menu_row .col-md-6 h3 {
 }
 
 footer #footer_menu_row .col-md-6 button {
+  height: 54px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -989,6 +1146,8 @@ footer #footer_menu_row .col-md-6 button {
   border: none;
   border-radius: 10px;
   background-color: #26272d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 footer #footer_menu_row .col-md-6 button img {
@@ -1018,6 +1177,38 @@ footer #footer_menu_row .col-md-6 button .text h3 {
   font-size: 16px;
 }
 
+footer #footer_menu_row .col-md-6 button:hover {
+  background-color: #fbfbfb;
+  border: 1px solid #26272d;
+}
+
+footer #footer_menu_row .col-md-6 button:hover img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+footer #footer_menu_row .col-md-6 button:hover .text p, footer #footer_menu_row .col-md-6 button:hover .text h3 {
+  color: #26272d;
+}
+
+footer #footer_menu_row .col-md-6 button:active {
+  background-color: #fbfbfb;
+  border: 1px solid #26272d;
+}
+
+footer #footer_menu_row .col-md-6 button:active img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+footer #footer_menu_row .col-md-6 button:active .text p, footer #footer_menu_row .col-md-6 button:active .text h3 {
+  color: #26272d;
+}
+
 footer #footer_menu_row .col-md-6 ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1025,7 +1216,17 @@ footer #footer_menu_row .col-md-6 ul {
 }
 
 footer #footer_menu_row .col-md-6 ul li {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   margin-right: 30px;
+}
+
+footer #footer_menu_row .col-md-6 ul li:hover {
+  opacity: 0.7;
+}
+
+footer #footer_menu_row .col-md-6 ul li:active {
+  opacity: 0.7;
 }
 
 footer #footer_menu_row .col-md-2 {
@@ -1039,6 +1240,7 @@ footer #footer_menu_row .col-md-2 {
 }
 
 footer #footer_menu_row .col-md-2 h3 {
+  color: #26272d;
   font-size: 15px;
 }
 
@@ -1057,7 +1259,17 @@ footer #footer_menu_row .col-md-2 ul li {
 }
 
 footer #footer_menu_row .col-md-2 ul li a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   font-size: 16px;
   color: #b5b5b6;
+}
+
+footer #footer_menu_row .col-md-2 ul li a:hover {
+  color: #26272d;
+}
+
+footer #footer_menu_row .col-md-2 ul li a:active {
+  color: #26272d;
 }
 /*# sourceMappingURL=style.css.map */
