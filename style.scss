@@ -159,15 +159,11 @@ header{
                 margin-left: 30px;
                 width: 110px;
                 height: 40px;
+                border:none;
                 border-radius: 30px;
                 background-color:#267df4;
                 transition: 0.5s;
-                a{
-                    width: 100px;
-                    height: 40px;
-                    position: absolute;
-                }
-
+            
                 p{
                     margin: 0 0 0 10px;
                     color:#ffffff;
@@ -1029,6 +1025,15 @@ footer{
 }
 
 @media screen and (max-width: 992px){
+
+    .menu_right_button
+    {
+        width: 40px !important;
+        height: 40px !important;
+        p{
+            display: none !important;
+        }
+    }
 
     #features_row{
         .col-md-6{
