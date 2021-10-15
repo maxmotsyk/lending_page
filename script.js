@@ -1,11 +1,21 @@
 // burger menu
+const window_width = window.innerWidth;
 const byrgerDoActive = function (iconBurger){
     if(iconBurger){
-        const menu_left  =  document.querySelector('.menu_left');
-        iconBurger.addEventListener("click",function(e){
-        iconBurger.classList.toggle('active');
-        menu_left.classList.toggle('active');
-        });
+        if(window_width > 991){
+            const menu_left  =  document.querySelector('.menu_left');
+            iconBurger.addEventListener("click",function(e){
+                iconBurger.classList.toggle('active');
+                menu_left.classList.toggle('active');
+            });
+        }
+        else{
+            const menu2 =  document.querySelector('.menu2');
+            iconBurger.addEventListener("click",function(e){
+                iconBurger.classList.toggle('active');
+                menu2.classList.toggle('active');
+            });
+        }
     }
     else{
         console.log ('Not found');

@@ -223,6 +223,48 @@ header .navbar #menu_right_col .menu_right_button:active {
   background-color: #267cf4d7;
 }
 
+header .navbar #menu2_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+header .navbar #menu2_col .menu2 {
+  position: absolute;
+  display: none;
+  top: 40px;
+}
+
+header .navbar #menu2_col .menu2 li {
+  margin: 0 30px 0 30px;
+}
+
+header .navbar #menu2_col .menu2 li a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .navbar #menu2_col .menu2 li a:hover {
+  color: #b5b5b6;
+}
+
+header .navbar #menu2_col .menu2 li a:active {
+  color: #b5b5b6;
+}
+
+header .navbar #menu2_col .menu2.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 header .container-fluid.one .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,7 +297,6 @@ header .container-fluid.one .row #header_content_col h1 {
 }
 
 header .container-fluid.one .row #header_content_col p {
-  white-space: nowrap;
   padding: 40px 0 0 0;
   color: #b5b5b6;
 }
@@ -340,9 +381,6 @@ section #iphone_featur_row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   position: relative;
   margin: 0 0 300px;
 }
@@ -355,7 +393,7 @@ section #iphone_featur_row #background_img_iphone_6 {
   width: 50%;
 }
 
-section #iphone_featur_row .col-md-6 {
+section #iphone_featur_row #text_col1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,16 +404,17 @@ section #iphone_featur_row .col-md-6 {
   padding-left: 100px;
 }
 
-section #iphone_featur_row .col-md-6 h2 {
+section #iphone_featur_row #text_col1 h2 {
   margin: 0 0 80px;
 }
 
-section #iphone_featur_row .col-md-6 p {
+section #iphone_featur_row #text_col1 p {
   color: #b5b5b6;
   margin: 0 0 80px;
 }
 
-section #iphone_featur_row .col-md-6 .button_area {
+section #iphone_featur_row #text_col1 .button_area {
+  height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,7 +423,7 @@ section #iphone_featur_row .col-md-6 .button_area {
           align-items: center;
 }
 
-section #iphone_featur_row .col-md-6 .button_area .buttone_one {
+section #iphone_featur_row #text_col1 .button_area .buttone_one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,52 +436,53 @@ section #iphone_featur_row .col-md-6 .button_area .buttone_one {
   margin: 0 30px 0 0;
   background-color: #267df4;
   border-radius: 30px;
+  border: none;
   width: 200px;
   height: 40px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-section #iphone_featur_row .col-md-6 .button_area .buttone_one p {
+section #iphone_featur_row #text_col1 .button_area .buttone_one p {
   color: #ffffff;
   margin: 0 50px 0 0;
 }
 
-section #iphone_featur_row .col-md-6 .button_area .buttone_one a {
+section #iphone_featur_row #text_col1 .button_area .buttone_one a {
   position: absolute;
   width: 200px;
   height: 30px;
 }
 
-section #iphone_featur_row .col-md-6 .button_area .buttone_one:hover {
+section #iphone_featur_row #text_col1 .button_area .buttone_one:hover {
   background-color: #eef0f3;
   border: 1px solid #dadada;
 }
 
-section #iphone_featur_row .col-md-6 .button_area .buttone_one:hover p {
+section #iphone_featur_row #text_col1 .button_area .buttone_one:hover p {
   color: #26272d;
 }
 
-section #iphone_featur_row .col-md-6 .button_area .buttone_one:hover img {
+section #iphone_featur_row #text_col1 .button_area .buttone_one:hover img {
   -webkit-filter: invert(1);
           filter: invert(1);
 }
 
-section #iphone_featur_row .col-md-6 .button_area .buttone_one:active {
+section #iphone_featur_row #text_col1 .button_area .buttone_one:active {
   background-color: #eef0f3;
   border: 1px solid #dadada;
 }
 
-section #iphone_featur_row .col-md-6 .button_area .buttone_one:active p {
+section #iphone_featur_row #text_col1 .button_area .buttone_one:active p {
   color: #26272d;
 }
 
-section #iphone_featur_row .col-md-6 .button_area .buttone_one:active img {
+section #iphone_featur_row #text_col1 .button_area .buttone_one:active img {
   -webkit-filter: invert(1);
           filter: invert(1);
 }
 
-section #iphone_featur_row .col-md-6 .button_area .buttone_two {
+section #iphone_featur_row #text_col1 .button_area .buttone_two {
   width: 150px;
   height: 45px;
   border-radius: 30px;
@@ -453,30 +493,19 @@ section #iphone_featur_row .col-md-6 .button_area .buttone_two {
   transition: 0.5s;
 }
 
-section #iphone_featur_row .col-md-6 .button_area .buttone_two:hover {
+section #iphone_featur_row #text_col1 .button_area .buttone_two:hover {
   border: none;
   background-color: #267df4;
   color: #ffffff;
 }
 
-section #iphone_featur_row .col-md-6 .button_area .buttone_two:active {
+section #iphone_featur_row #text_col1 .button_area .buttone_two:active {
   border: none;
   background-color: #267df4;
   color: #ffffff;
 }
 
-section #map_featur_row {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 0 300px;
-}
-
-section #map_featur_row .col-md-6 {
+section #iphone_featur_row #text_col2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,22 +514,37 @@ section #map_featur_row .col-md-6 {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-left: 100px;
+  margin: 300px 0 0;
 }
 
-section #map_featur_row .col-md-6 h2 {
+section #iphone_featur_row #text_col2 h2 {
   margin: 0 0 80px;
 }
 
-section #map_featur_row .col-md-6 p {
+section #iphone_featur_row #text_col2 p {
   color: #b5b5b6;
   margin: 0 0 80px;
 }
 
-section #map_featur_row .col-md-6 .patners_area img {
+section #iphone_featur_row #text_col2 .patners_area {
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section #iphone_featur_row #text_col2 .patners_area img {
   margin: 0 30px 0 0;
 }
 
-section #map_featur_row #img_map {
+section #iphone_featur_row #img_map_col {
+  margin: 300px 0 0;
+}
+
+section #iphone_featur_row #img_map {
   position: absolute;
   right: 0;
   width: 50%;
@@ -944,6 +988,13 @@ section #plan_row #plan_col P a {
 }
 
 section #plan_row #card_col {
+  height: 560px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section #plan_row #card_col .card_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -953,10 +1004,9 @@ section #plan_row #card_col {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 560px;
 }
 
-section #plan_row #card_col .card1, section #plan_row #card_col .card2 {
+section #plan_row #card_col .card_area .card1, section #plan_row #card_col .card_area .card2 {
   width: 341px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -977,12 +1027,12 @@ section #plan_row #card_col .card1, section #plan_row #card_col .card2 {
   transition: 0.7s;
 }
 
-section #plan_row #card_col .card1 h1, section #plan_row #card_col .card2 h1 {
+section #plan_row #card_col .card_area .card1 h1, section #plan_row #card_col .card_area .card2 h1 {
   font-size: 27px;
   font-weight: 400;
 }
 
-section #plan_row #card_col .card1 button, section #plan_row #card_col .card2 button {
+section #plan_row #card_col .card_area .card1 button, section #plan_row #card_col .card_area .card2 button {
   width: 65px;
   height: 27px;
   border-radius: 40px;
@@ -994,23 +1044,23 @@ section #plan_row #card_col .card1 button, section #plan_row #card_col .card2 bu
   transition: 0.7s;
 }
 
-section #plan_row #card_col .card1 button p, section #plan_row #card_col .card2 button p {
+section #plan_row #card_col .card_area .card1 button p, section #plan_row #card_col .card_area .card2 button p {
   font-size: 14px;
   margin: 0;
   padding: 0;
 }
 
-section #plan_row #card_col .card1 h3, section #plan_row #card_col .card2 h3 {
+section #plan_row #card_col .card_area .card1 h3, section #plan_row #card_col .card_area .card2 h3 {
   font-size: 20px;
   color: #b5b5b6;
   margin: 0 0 50px;
 }
 
-section #plan_row #card_col .card1 h4, section #plan_row #card_col .card2 h4 {
+section #plan_row #card_col .card_area .card1 h4, section #plan_row #card_col .card_area .card2 h4 {
   font-size: 14px;
 }
 
-section #plan_row #card_col .card1, section #plan_row #card_col .card2.active {
+section #plan_row #card_col .card_area .card1, section #plan_row #card_col .card_area .card2.active {
   background-color: #ffffff;
   -webkit-box-shadow: 13px 10px 33px 3px rgba(34, 60, 80, 0.14);
           box-shadow: 13px 10px 33px 3px rgba(34, 60, 80, 0.14);
@@ -1018,18 +1068,18 @@ section #plan_row #card_col .card1, section #plan_row #card_col .card2.active {
   z-index: 5;
 }
 
-section #plan_row #card_col .card1 button, section #plan_row #card_col .card2.active button {
+section #plan_row #card_col .card_area .card1 button, section #plan_row #card_col .card_area .card2.active button {
   background-color: #ffffff;
 }
 
-section #plan_row #card_col .card1.unactive, section #plan_row #card_col .card2 {
+section #plan_row #card_col .card_area .card1.unactive, section #plan_row #card_col .card_area .card2 {
   background-color: #ebebed;
   -webkit-box-shadow: none;
           box-shadow: none;
   height: 500px;
 }
 
-section #plan_row #card_col .card1.unactive button, section #plan_row #card_col .card2 button {
+section #plan_row #card_col .card_area .card1.unactive button, section #plan_row #card_col .card_area .card2 button {
   background-color: #ebebed;
 }
 
@@ -1286,50 +1336,50 @@ footer #footer_menu_row .col-md-2 ul li a:active {
   }
 }
 
-@media screen and (max-width: 992px) {
-  .menu_right_button {
-    width: 40px !important;
-    height: 40px !important;
+@media screen and (max-width: 991px) {
+  .navbar {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
   }
-  .menu_right_button p {
+  .navbar #menu_right_col {
     display: none !important;
   }
-  #features_row .col-md-6 {
-    padding: 0px !important;
+  #features_row .col-md-6.one {
+    padding: 0 20px 0 0 !important;
   }
-  #iphone_featur_row {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
+  #features_row .col-md-6.two {
+    padding: 0 0 0 20px !important;
   }
-  #iphone_featur_row #background_img_iphone_6 {
+  #iphone_featur_row #background_img_iphone_6_col, #iphone_featur_row #img_map_col {
     display: none !important;
   }
-  #iphone_featur_row .col-md-6 {
-    padding: 0px !important;
+  #iphone_featur_row #text_col2 {
+    padding: 0 0 0 20px !important;
+    margin: 0 !important;
   }
-  #map_featur_row {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
+  #iphone_featur_row #text_col1 {
+    padding: 0 20px 0 0 !important;
+    margin: 0 !important;
   }
-  #map_featur_row #img_map {
-    display: none !important;
+  #card_col .card1 h3, #card_col .card2 h3 {
+    font-size: 15px !important;
+    margin: 0 0 30px !important;
   }
-  #map_featur_row .col-md-6 {
-    padding: 0px !important;
+  #card_col .card1 button, #card_col .card2 button {
+    margin: 31px 0 40px !important;
+  }
+  #card_col .card1, #card_col .card2.active {
+    height: 360px !important;
+  }
+  #card_col .card1.unactive, #card_col .card2 {
+    height: 320px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #custumers_img_col .slide img {
+    margin: 0 10px 0 10px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
