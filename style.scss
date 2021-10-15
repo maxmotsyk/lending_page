@@ -279,7 +279,7 @@ section{
     #features_row{
         display: flex;
         justify-content: center;
-        margin: 120px 0 300px ;
+        margin: 90px 0 90px ;
         .col-md-6{
             display: flex;
             flex-direction: column;
@@ -905,7 +905,7 @@ footer{
     }
 
     #footer_menu_row{
-        margin:150px 0 150px;
+        margin: 100px 0 50px;
         .col-md-6{
             display: flex;
             flex-direction: column;
@@ -1004,10 +1004,22 @@ footer{
         .col-md-2{
             display: flex;
             flex-direction: column;
+            position: relative;
 
             h3{
+                display: flex;
+                align-items: center;
                 color: #26272d;
                 font-size: 15px;
+
+                img{
+                    position: absolute;
+                    right: 12px;
+                    display: none;
+                    width: 18px;
+                    height: 18px;
+                    margin: 0 0 0 12px ;
+                }
             }
 
             ul{
@@ -1029,6 +1041,24 @@ footer{
                     a:active{
                         color: #26272d;;
                     }
+                }
+            }
+        }
+
+        #sub_col{
+            display: none;
+            ul{
+               
+                li{
+                    transition: 0.5s;
+                }
+
+                li:hover{
+                    opacity: 0.7;
+                }
+
+                li:active{
+                    opacity: 0.7;
                 }
             }
         }
@@ -1119,11 +1149,101 @@ footer{
     }
 }
 
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 767px){
+    #features_row{
+        .col-md-6.one{
+            padding: 0 !important;
+        }
+
+        .col-md-6.two{
+            padding: 0 !important;
+        }
+    }
+    
     #custumers_img_col{
         .slide{
             img{
                 margin: 0 10px 0 10px !important;
+            }
+        }
+    }
+
+    #iphone_featur_row{
+        
+        #text_col2,#text_col1{
+            padding: 0 !important;
+        }
+
+        #text_col2{
+            margin: 130px 0 0 !important;
+        }
+    }
+
+    #card_col{
+        margin: 130px 0 0 !important;
+    }
+
+    #footer_menu_row{
+        .col-md-6{
+            display: none !important;
+        }
+
+        .col-md-2{
+            align-items: center !important;
+        }
+        
+        #sub_col{
+            display: flex !important;
+        }
+    }
+}
+
+@media screen and (max-width: 575px){
+
+    #header_content_col{
+
+        .iphone6{
+            width: 325px !important;
+            height: 365px !important;
+        }
+    }
+    #footer_menu_row{
+        .col-md-2{
+            align-items:flex-start !important;
+            h3{
+                font-size: 22px !important;
+                justify-content: space-between;
+                img{
+                    display: block !important;
+                }
+            }
+            .under_menu{
+                display: none !important;
+
+                a{
+                    font-size: 18px !important;
+                }
+            }
+
+            .under_menu.active{
+                display: flex !important;
+            }
+        }
+    }
+
+    #custumers_img_col{
+        .slide{
+            img{
+                width: 80px !important;
+                margin: 0 -5px 0 -5px !important;
+            }
+           
+        }
+
+        .slide.main{
+            img{
+                width: 110px !important;
             }
         }
     }

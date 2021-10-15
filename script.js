@@ -109,3 +109,29 @@ card2.addEventListener("mouseout",function(e){
     card2.classList = ('card2');
     card1.classList = ('card1');
 });
+
+
+function under_menu_open(child){
+    let src_plus = 'img/footer/plus.png';
+    let src_minus = 'img/footer/remove.png'
+
+    if(child.src.includes('plus')){
+        child.src = src_minus;
+    }
+    else{
+        child.src = src_plus;
+    }
+
+    let parent = child.parentNode;
+    let neighboring = parent.nextElementSibling;
+    neighboring.classList.toggle('active');
+}
+
+let pluss_mass = document.querySelectorAll('#plus_menu');
+
+console.log(pluss_mass);
+for(let i = 0; i < pluss_mass.length;i++){
+    pluss_mass[i].addEventListener("click",function(e){
+        under_menu_open(this);
+    });
+}
