@@ -869,15 +869,16 @@ footer{
                 display: flex;
                 border: 1px solid #b5b5b6;
                 border-radius: 30px;
-                padding: 7px;
+                padding: 7px 0 7px;
                 justify-content: space-between;
                 width: 370px;
                 
-k
+
                 input{
                     margin-left: 10px;
                     background-color:#fbfbfb;
                     border:none;
+                    margin-left: 7px;
                 }
 
                 button{
@@ -890,6 +891,7 @@ k
                     border:none;
                     background-color:#6fc754;
                     transition: 0.5s;
+                    margin-right: 7px;
             
                     p{
                         padding: 0;
