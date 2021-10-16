@@ -44,7 +44,6 @@ header{
             display: flex;
             justify-content: flex-start;
             align-items: center;
-
             .burger_menu{
                 width: 30px;
                 height: 16px;
@@ -122,6 +121,7 @@ header{
         }
 
         #logo_col{
+            z-index: 3;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -478,11 +478,11 @@ section{
         align-items: center;
         justify-content: center;
         margin: 0 0 200px;
-        
         .col-12{
             display: flex;
             justify-content: center;
             overflow-x: scroll;
+            overflow:hidden;
             width: auto;
             
             div{
@@ -1013,8 +1013,9 @@ footer{
                 font-size: 15px;
 
                 img{
+                    transition: 0.5s;
                     position: absolute;
-                    right: 12px;
+                    right: 20px;
                     display: none;
                     width: 18px;
                     height: 18px;
@@ -1151,6 +1152,42 @@ footer{
 
 
 @media screen and (max-width: 767px){
+
+    body.lock{
+        overflow: hidden !important;
+    }
+
+    .navbar{
+    
+        .col-md-12.active{
+            top: 0 !important;
+            left: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+            position: fixed !important;
+            background-color:#fbfbfb;
+
+            .menu2.active{
+                overflow: auto !important;
+                flex-direction: column !important;
+            }
+
+            .menu2{
+                top:60px !important;
+                li{
+                    display: flex;
+                    justify-content: center;
+                    margin: 5px 0 5px 0 !important;
+                    
+                    a{
+                        font-size: 17px !important;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+    
     #features_row{
         .col-md-6.one{
             padding: 0 !important;
@@ -1181,6 +1218,7 @@ footer{
     }
 
     #card_col{
+        height: 300px !important;
         margin: 130px 0 0 !important;
     }
 
@@ -1245,6 +1283,157 @@ footer{
             img{
                 width: 110px !important;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    #header_content_col{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        h1{
+            font-size: 35px !important;
+        }
+    }
+
+    #custumers_img_col{
+        justify-content: center !important;
+
+        #row_left,#row_right{
+            display: none !important;
+        }
+
+        .slide{
+            img{
+                margin: 0 7px 0 7px !important;
+            }
+           
+        }
+    }
+
+    #features_row{
+        .col-md-6.one,.col-md-6.two{
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+    }
+    
+    #iphone_featur_row{
+        #text_col1{
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+
+            h2{
+                margin: 0 0 70px !important;
+            }
+
+            .buttone_one{
+                width: 180px !important;
+
+                p{
+                    margin: 0 30px 0 0 !important ;
+                }
+            }
+        }
+
+        #text_col2{
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+
+            h2{
+                margin: 0 0 70px !important;
+            }
+
+            .patners_area{
+                img{
+                    width: 130px !important;
+                }
+            }
+        }
+    }
+
+    #iphone_screens_row_2{
+        #iphone{
+            min-width: 252px !important;
+            height: 514px !important;
+
+            img{
+                width: 217px !important;
+                height: 383px !important;
+            }
+        }
+
+        .c{
+            img{
+                width: 252px !important;
+                height: 514px !important;
+            }
+        }
+    }
+
+    #ready_to_buy_row{
+        .send_id{
+            width: 347px !important;
+        }
+    }
+
+    #fedbacke_col{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    #plan_col{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    #card_col{
+        .card1,.card2{
+            h1{
+                font-size: 20px !important;
+            }
+
+            button{
+                margin:10px 0 30px !important;
+                width: 50px !important;
+                p{
+                    font-size: 13px !important; ;
+                }
+            }
+
+            h3{
+                font-size: 13px !important;
+                margin-bottom: 20px !important;
+            }
+
+            h4{
+                font-size: 13px !important;
+                img{
+                    width: 10px !important;
+                }
+            }
+        }
+
+        .card1,.card2.active{
+            width: 163px !important;
+            height:270px !important;
+        }
+
+        .card1.unactive,.card2{
+            width: 163px !important;
+            height:236px !important;
+        }
+    }
+
+    .send_id{
+        width: 347px !important;
+    }
+
+    #footer_menu_row{
+        .col-md-2{
+            padding-left: 20px !important;
+            padding-right: 20px !important;
         }
     }
 }

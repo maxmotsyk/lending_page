@@ -140,6 +140,7 @@ header .navbar #col_burger_menu .menu_left.active {
 }
 
 header .navbar #logo_col {
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -613,6 +614,7 @@ section #iphone_screens_row_2 .col-12 {
       -ms-flex-pack: center;
           justify-content: center;
   overflow-x: scroll;
+  overflow: hidden;
   width: auto;
 }
 
@@ -1297,8 +1299,10 @@ footer #footer_menu_row .col-md-2 h3 {
 }
 
 footer #footer_menu_row .col-md-2 h3 img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   position: absolute;
-  right: 12px;
+  right: 20px;
   display: none;
   width: 18px;
   height: 18px;
@@ -1411,6 +1415,41 @@ footer #footer_menu_row #sub_col ul li:active {
 }
 
 @media screen and (max-width: 767px) {
+  body.lock {
+    overflow: hidden !important;
+  }
+  .navbar .col-md-12.active {
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    position: fixed !important;
+    background-color: #fbfbfb;
+  }
+  .navbar .col-md-12.active .menu2.active {
+    overflow: auto !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .navbar .col-md-12.active .menu2 {
+    top: 60px !important;
+  }
+  .navbar .col-md-12.active .menu2 li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 5px 0 5px 0 !important;
+  }
+  .navbar .col-md-12.active .menu2 li a {
+    font-size: 17px !important;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
   #features_row .col-md-6.one {
     padding: 0 !important;
   }
@@ -1427,6 +1466,7 @@ footer #footer_menu_row #sub_col ul li:active {
     margin: 130px 0 0 !important;
   }
   #card_col {
+    height: 300px !important;
     margin: 130px 0 0 !important;
   }
   #footer_menu_row .col-md-6 {
@@ -1480,6 +1520,112 @@ footer #footer_menu_row #sub_col ul li:active {
   }
   #custumers_img_col .slide.main img {
     width: 110px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #header_content_col {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  #header_content_col h1 {
+    font-size: 35px !important;
+  }
+  #custumers_img_col {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  #custumers_img_col #row_left, #custumers_img_col #row_right {
+    display: none !important;
+  }
+  #custumers_img_col .slide img {
+    margin: 0 7px 0 7px !important;
+  }
+  #features_row .col-md-6.one, #features_row .col-md-6.two {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  #iphone_featur_row #text_col1 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  #iphone_featur_row #text_col1 h2 {
+    margin: 0 0 70px !important;
+  }
+  #iphone_featur_row #text_col1 .buttone_one {
+    width: 180px !important;
+  }
+  #iphone_featur_row #text_col1 .buttone_one p {
+    margin: 0 30px 0 0 !important;
+  }
+  #iphone_featur_row #text_col2 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  #iphone_featur_row #text_col2 h2 {
+    margin: 0 0 70px !important;
+  }
+  #iphone_featur_row #text_col2 .patners_area img {
+    width: 130px !important;
+  }
+  #iphone_screens_row_2 #iphone {
+    min-width: 252px !important;
+    height: 514px !important;
+  }
+  #iphone_screens_row_2 #iphone img {
+    width: 217px !important;
+    height: 383px !important;
+  }
+  #iphone_screens_row_2 .c img {
+    width: 252px !important;
+    height: 514px !important;
+  }
+  #ready_to_buy_row .send_id {
+    width: 347px !important;
+  }
+  #fedbacke_col {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  #plan_col {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  #card_col .card1 h1, #card_col .card2 h1 {
+    font-size: 20px !important;
+  }
+  #card_col .card1 button, #card_col .card2 button {
+    margin: 10px 0 30px !important;
+    width: 50px !important;
+  }
+  #card_col .card1 button p, #card_col .card2 button p {
+    font-size: 13px !important;
+  }
+  #card_col .card1 h3, #card_col .card2 h3 {
+    font-size: 13px !important;
+    margin-bottom: 20px !important;
+  }
+  #card_col .card1 h4, #card_col .card2 h4 {
+    font-size: 13px !important;
+  }
+  #card_col .card1 h4 img, #card_col .card2 h4 img {
+    width: 10px !important;
+  }
+  #card_col .card1, #card_col .card2.active {
+    width: 163px !important;
+    height: 270px !important;
+  }
+  #card_col .card1.unactive, #card_col .card2 {
+    width: 163px !important;
+    height: 236px !important;
+  }
+  .send_id {
+    width: 347px !important;
+  }
+  #footer_menu_row .col-md-2 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
