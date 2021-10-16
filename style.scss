@@ -1158,7 +1158,6 @@ footer{
     }
 
     .navbar{
-    
         .col-md-12.active{
             top: 0 !important;
             left: 0 !important;
@@ -1173,18 +1172,24 @@ footer{
             }
 
             .menu2{
-                top:60px !important;
+                top:50% !important;
                 li{
                     display: flex;
                     justify-content: center;
-                    margin: 5px 0 5px 0 !important;
+                    margin: 10px 0 10px 0 !important;
                     
                     a{
-                        font-size: 17px !important;
+                        font-size: 23px !important;
                         transition: 0.3s;
                     }
                 }
             }
+        }
+    }
+
+    #logo_col{
+        img{
+            width: 135px !important;
         }
     }
     

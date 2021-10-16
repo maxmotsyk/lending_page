@@ -1434,7 +1434,7 @@ footer #footer_menu_row #sub_col ul li:active {
             flex-direction: column !important;
   }
   .navbar .col-md-12.active .menu2 {
-    top: 60px !important;
+    top: 50% !important;
   }
   .navbar .col-md-12.active .menu2 li {
     display: -webkit-box;
@@ -1443,12 +1443,15 @@ footer #footer_menu_row #sub_col ul li:active {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 5px 0 5px 0 !important;
+    margin: 10px 0 10px 0 !important;
   }
   .navbar .col-md-12.active .menu2 li a {
-    font-size: 17px !important;
+    font-size: 23px !important;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+  }
+  #logo_col img {
+    width: 135px !important;
   }
   #features_row .col-md-6.one {
     padding: 0 !important;
