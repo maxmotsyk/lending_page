@@ -1017,8 +1017,8 @@ footer{
                     position: absolute;
                     right: 20px;
                     display: none;
-                    width: 18px;
-                    height: 18px;
+                    width: 15px;
+                    height: 15px;
                     margin: 0 0 0 12px ;
                 }
             }
@@ -1172,14 +1172,14 @@ footer{
             }
 
             .menu2{
-                top:50% !important;
+                top:25% !important;
                 li{
                     display: flex;
                     justify-content: center;
                     margin: 10px 0 10px 0 !important;
                     
                     a{
-                        font-size: 23px !important;
+                        font-size: 20px !important;
                         transition: 0.3s;
                     }
                 }
@@ -1255,7 +1255,7 @@ footer{
         .col-md-2{
             align-items:flex-start !important;
             h3{
-                font-size: 22px !important;
+                font-size: 18px !important;
                 justify-content: space-between;
                 img{
                     display: block !important;
