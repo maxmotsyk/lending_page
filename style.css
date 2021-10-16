@@ -35,6 +35,10 @@ input, textarea {
   outline: none;
 }
 
+button {
+  white-space: nowrap;
+}
+
 header {
   background-image: url("img/header/bacground_sky.png");
   background-position: center;
@@ -1468,9 +1472,15 @@ footer #footer_menu_row #sub_col ul li:active {
   #iphone_featur_row #text_col2 {
     margin: 130px 0 0 !important;
   }
+  #plan_col h1 {
+    margin: 0 0 60px !important;
+  }
+  #plan_col p {
+    margin: 30px 0 0 !important;
+  }
   #card_col {
     height: 300px !important;
-    margin: 130px 0 0 !important;
+    margin: 80px 0 0 !important;
   }
   #footer_menu_row .col-md-6 {
     display: none !important;
