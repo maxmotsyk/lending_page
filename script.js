@@ -80,11 +80,18 @@ document.getElementById("iphone_screens_row_2").onwheel = function(event){
     return false;
 }
 
+// выввы
+document.getElementById("iphone_screens_row_2").addEventListener("touchend",sosi);
 
+function sosi (event){
+    console.log(event);
+}
 let img_humans = document.querySelectorAll('#humans');
 const slider2 = new Slider(img_humans);
 
 
+
+// ыывы
 document.getElementById('row_left').addEventListener("click",function(e){
     slider2.imgInMass();
     slider2.left();
@@ -111,7 +118,7 @@ card2.addEventListener("mouseout",function(e){
     card1.classList = ('card1');
 });
 
-
+// under_menu
 function under_menu_open(child){
     let src_plus = 'img/footer/plus.png';
     let src_minus = 'img/footer/remove.png'
