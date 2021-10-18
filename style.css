@@ -365,7 +365,7 @@ section #features_row .col-md-6 {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-left: 100px;
-  margin-top: 120px;
+  margin-top: 130px;
 }
 
 section #features_row .col-md-6 img {
@@ -387,7 +387,7 @@ section #iphone_featur_row {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  margin: 0 0 300px;
+  margin: 0 0 180px;
 }
 
 section #iphone_featur_row #background_img_iphone_6 {
@@ -1310,10 +1310,11 @@ footer #footer_menu_row .col-md-2 h3 img {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   position: absolute;
+  opacity: 0.9;
   right: 20px;
   display: none;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   margin: 0 0 0 12px;
 }
 
@@ -1338,12 +1339,25 @@ footer #footer_menu_row .col-md-2 ul li a {
   color: #b5b5b6;
 }
 
+footer #footer_menu_row .col-md-2 ul li img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 footer #footer_menu_row .col-md-2 ul li a:hover {
   color: #26272d;
 }
 
 footer #footer_menu_row .col-md-2 ul li a:active {
   color: #26272d;
+}
+
+footer #footer_menu_row .col-md-2 ul li img:hover {
+  opacity: 0.7;
+}
+
+footer #footer_menu_row .col-md-2 ul li img:active {
+  opacity: 0.7;
 }
 
 footer #footer_menu_row #sub_col {
@@ -1506,13 +1520,16 @@ footer #footer_menu_row #sub_col ul li:active {
     width: 325px !important;
     height: 365px !important;
   }
+  #footer_menu_row {
+    margin-top: 130px !important;
+  }
   #footer_menu_row .col-md-2 {
     -webkit-box-align: start !important;
         -ms-flex-align: start !important;
             align-items: flex-start !important;
   }
   #footer_menu_row .col-md-2 h3 {
-    font-size: 18px !important;
+    font-size: 13px !important;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1524,12 +1541,16 @@ footer #footer_menu_row #sub_col ul li:active {
     display: none !important;
   }
   #footer_menu_row .col-md-2 .under_menu a {
-    font-size: 18px !important;
+    font-size: 12px !important;
   }
   #footer_menu_row .col-md-2 .under_menu.active {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+  }
+  .pluss_h3.active img {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   #custumers_img_col .slide img {
     width: 80px !important;
@@ -1559,9 +1580,21 @@ footer #footer_menu_row #sub_col ul li:active {
   #custumers_img_col .slide img {
     margin: 0 7px 0 7px !important;
   }
+  #features_row {
+    margin: 200px 0 200px !important;
+  }
   #features_row .col-md-6.one, #features_row .col-md-6.two {
     padding-left: 20px !important;
     padding-right: 20px !important;
+  }
+  #features_row .col-md-6.one img, #features_row .col-md-6.two img {
+    width: 30px !important;
+  }
+  #features_row .col-md-6.one {
+    margin: 0;
+  }
+  #iphone_featur_row {
+    margin-bottom: 200px !important;
   }
   #iphone_featur_row #text_col1 {
     padding-left: 20px !important;
@@ -1572,9 +1605,10 @@ footer #footer_menu_row #sub_col ul li:active {
   }
   #iphone_featur_row #text_col1 .buttone_one {
     width: 180px !important;
+    margin: 0 20px 0 0 !important;
   }
   #iphone_featur_row #text_col1 .buttone_one p {
-    margin: 0 30px 0 0 !important;
+    margin: 0 20px 0 0 !important;
   }
   #iphone_featur_row #text_col2 {
     padding-left: 20px !important;
@@ -1585,6 +1619,9 @@ footer #footer_menu_row #sub_col ul li:active {
   }
   #iphone_featur_row #text_col2 .patners_area img {
     width: 130px !important;
+  }
+  #iphone_screens_row_2 {
+    margin-bottom: 130px !important;
   }
   #iphone_screens_row_2 #iphone {
     min-width: 252px !important;
@@ -1601,11 +1638,20 @@ footer #footer_menu_row #sub_col ul li:active {
   #ready_to_buy_row .send_id {
     width: 347px !important;
   }
+  #App_store_col {
+    margin-bottom: 200px !important;
+  }
+  #custumers_img_col {
+    margin: 0 !important;
+  }
   #fedbacke_col {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
-  #plan_col {
+  #plan_row {
+    margin: 200px 0 200px !important;
+  }
+  #plan_row #plan_col {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }

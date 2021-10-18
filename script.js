@@ -120,18 +120,10 @@ card2.addEventListener("mouseout",function(e){
 
 // under_menu
 function under_menu_open(child){
-    let src_plus = 'img/footer/plus.png';
-    let src_minus = 'img/footer/remove.png'
-
-    if(child.src.includes('plus')){
-        child.src = src_minus;
-    }
-    else{
-        child.src = src_plus;
-    }
-
+    
     let parent = child.parentNode;
     let neighboring = parent.nextElementSibling;
+    parent.classList.toggle('active');
     neighboring.classList.toggle('active');
 }
 
