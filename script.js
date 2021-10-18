@@ -143,14 +143,8 @@ function endTouch2 (event){
 
 // movement of cards
 let card2 = document.querySelector('.card2');
-
+let card1 = document.querySelector('.card1');
 card2.addEventListener("mouseover",function(e){
-    let card1 = document.querySelector('.card1');
-    card2.classList = ('card2 active');
-    card1.classList = ('card1 unactive');
-});
-
-card2.addEventListener("touchstart",function(e){
     let card1 = document.querySelector('.card1');
     card2.classList = ('card2 active');
     card1.classList = ('card1 unactive');
@@ -162,6 +156,22 @@ card2.addEventListener("mouseout",function(e){
     card1.classList = ('card1');
 });
 // movement of cards end
+
+
+// movement of cards mobile
+card2.addEventListener("click",function(e){
+    let card1 = document.querySelector('.card1');
+    card2.classList = ('card2 active');
+    card1.classList = ('card1 unactive');
+});
+
+card1.ddEventListener("mouseout",function(e){
+    let card1 = document.querySelector('.card1');
+    card2.classList = ('card2');
+    card1.classList = ('card1');
+});
+// movement of cards mobile end
+
 
 // under_menu
 function under_menu_open(child){
