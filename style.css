@@ -693,9 +693,10 @@ section #ready_to_buy_row #send_id_col .send_id {
   display: flex;
   border: 1px solid #b5b5b6;
   border-radius: 30px;
-  padding: 7px 7px 7px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  padding: 7px 0 7px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 370px;
 }
 
@@ -703,6 +704,7 @@ section #ready_to_buy_row #send_id_col .send_id input {
   width: 185px;
   background-color: #fbfbfb;
   border: none;
+  margin-left: 10px;
 }
 
 section #ready_to_buy_row #send_id_col .send_id button {
@@ -715,6 +717,7 @@ section #ready_to_buy_row #send_id_col .send_id button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 7px;
   width: 150px;
   height: 45px;
   border-radius: 30px;

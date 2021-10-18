@@ -540,8 +540,8 @@ section{
 
                 border: 1px solid #b5b5b6;
                 border-radius: 30px;
-                padding: 7px 7px 7px;
-                justify-content: space-around;
+                padding: 7px 0 7px;
+                justify-content: space-between;
                 width: 370px;
                 
 
@@ -549,12 +549,14 @@ section{
                     width:185px;
                     background-color:#fbfbfb;
                     border:none;
+                    margin-left: 10px;
                 }
 
                 button{
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    margin-right: 7px;
                     width: 150px;
                     height: 45px;
                     border-radius: 30px;
