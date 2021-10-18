@@ -1016,6 +1016,7 @@ footer{
 
             h3{
                 display: flex;
+                justify-content: center;
                 align-items: center;
                 color: #26272d;
                 font-size: 15px;
@@ -1499,6 +1500,7 @@ footer{
     }
 
     #footer_menu_row{
+        margin-top: 80px !important;
         .col-md-2{
             padding-left: 20px !important;
             padding-right: 20px !important;

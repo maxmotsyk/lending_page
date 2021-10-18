@@ -1296,6 +1296,9 @@ footer #footer_menu_row .col-md-2 h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1682,6 +1685,9 @@ footer #footer_menu_row #sub_col ul li:active {
   }
   .send_id {
     width: 347px !important;
+  }
+  #footer_menu_row {
+    margin-top: 80px !important;
   }
   #footer_menu_row .col-md-2 {
     padding-left: 20px !important;
