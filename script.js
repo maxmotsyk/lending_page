@@ -1,3 +1,15 @@
+// check touch support
+let isTouch;
+if ("ontouchstart" in window || navigator.msMaxTouchPoints) {
+    isTouch = true;
+} else {
+    isTouch = false;
+}
+
+if(isTouch){
+    document.querySelector('.custumers_col').classList.toggle('isTouch');
+}
+
 // burger menu
 const byrgerDoActive = function (iconBurger){
     if(iconBurger){

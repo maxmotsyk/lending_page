@@ -848,7 +848,7 @@ section #App_store_col button:active .text p, section #App_store_col button:acti
   color: #26272d;
 }
 
-section #custumers_row #custumers_img_col {
+section #custumers_row .custumers_col {
   height: 136px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -862,7 +862,7 @@ section #custumers_row #custumers_img_col {
   margin-top: 300px;
 }
 
-section #custumers_row #custumers_img_col #row_left, section #custumers_row #custumers_img_col #row_right {
+section #custumers_row .custumers_col #row_left, section #custumers_row .custumers_col #row_right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -877,31 +877,31 @@ section #custumers_row #custumers_img_col #row_left, section #custumers_row #cus
   background-color: #fbfbfb;
 }
 
-section #custumers_row #custumers_img_col #row_right:hover img {
+section #custumers_row .custumers_col #row_right:hover img {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 0.5;
 }
 
-section #custumers_row #custumers_img_col #row_right:active img {
+section #custumers_row .custumers_col #row_right:active img {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 0.5;
 }
 
-section #custumers_row #custumers_img_col #row_left:active img {
+section #custumers_row .custumers_col #row_left:active img {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 0.5;
 }
 
-section #custumers_row #custumers_img_col .sliders {
+section #custumers_row .custumers_col .sliders {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-section #custumers_row #custumers_img_col .sliders .slide {
+section #custumers_row .custumers_col .sliders .slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -910,7 +910,7 @@ section #custumers_row #custumers_img_col .sliders .slide {
           align-items: center;
 }
 
-section #custumers_row #custumers_img_col .sliders .slide img {
+section #custumers_row .custumers_col .sliders .slide img {
   opacity: 0.2;
   width: 110px;
   margin: 0 60px 0 60px;
@@ -918,7 +918,7 @@ section #custumers_row #custumers_img_col .sliders .slide img {
   transition: 0.5s;
 }
 
-section #custumers_row #custumers_img_col .sliders .slide.main img {
+section #custumers_row .custumers_col .sliders .slide.main img {
   opacity: 1;
   width: 150px;
   -webkit-transition: 0.5s;
@@ -952,6 +952,16 @@ section #custumers_row #fedbacke_col h3 {
 
 section #custumers_row #fedbacke_col h4 {
   font-size: 12px;
+}
+
+section #custumers_row .custumers_col.isTouch {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section #custumers_row .custumers_col.isTouch #row_left, section #custumers_row .custumers_col.isTouch #row_right {
+  display: none;
 }
 
 section #plan_row {
@@ -1553,16 +1563,6 @@ footer #footer_menu_row #sub_col ul li:active {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
-  #custumers_img_col .slide img {
-    width: 80px !important;
-    margin: 0 -5px 0 -5px !important;
-  }
-  #custumers_img_col .slide.main img {
-    width: 110px !important;
-  }
-}
-
-@media screen and (max-width: 400px) {
   #header_content_col {
     padding-left: 20px !important;
     padding-right: 20px !important;
@@ -1571,6 +1571,7 @@ footer #footer_menu_row #sub_col ul li:active {
     font-size: 35px !important;
   }
   #custumers_img_col {
+    margin: 0 !important;
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
@@ -1579,7 +1580,11 @@ footer #footer_menu_row #sub_col ul li:active {
     display: none !important;
   }
   #custumers_img_col .slide img {
+    width: 100px !important;
     margin: 0 7px 0 7px !important;
+  }
+  #custumers_img_col .slide.main img {
+    width: 130px !important;
   }
   #features_row {
     margin: 200px 0 200px !important;
@@ -1641,9 +1646,6 @@ footer #footer_menu_row #sub_col ul li:active {
   }
   #App_store_col {
     margin-bottom: 200px !important;
-  }
-  #custumers_img_col {
-    margin: 0 !important;
   }
   #fedbacke_col {
     padding-left: 20px !important;

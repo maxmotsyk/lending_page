@@ -665,7 +665,8 @@ section{
     }
 
     #custumers_row{
-        #custumers_img_col{
+        
+        .custumers_col{
             height: 136px;
             display: flex;
             align-items: center;
@@ -747,6 +748,14 @@ section{
 
             h4{
                 font-size: 12px;
+            }
+        }
+
+        
+        .custumers_col.isTouch{
+            justify-content:center;
+            #row_left,#row_right{
+                display: none;
             }
         }
     }
@@ -1025,7 +1034,6 @@ footer{
                 img{
                     transition: 0.5s;
                     position: absolute;
-                    opacity: 0.9;
                     right: 20px;
                     display: none;
                     width: 13.5px;
@@ -1317,25 +1325,6 @@ footer{
         }
     }
 
-    #custumers_img_col{
-        .slide{
-            img{
-                width: 80px !important;
-                margin: 0 -5px 0 -5px !important;
-            }
-           
-        }
-
-        .slide.main{
-            img{
-                width: 110px !important;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 400px){
-
     #header_content_col{
         padding-left: 20px !important;
         padding-right: 20px !important;
@@ -1345,6 +1334,7 @@ footer{
     }
 
     #custumers_img_col{
+        margin: 0 !important;
         justify-content: center !important;
 
         #row_left,#row_right{
@@ -1353,9 +1343,16 @@ footer{
 
         .slide{
             img{
+                width: 100px !important;
                 margin: 0 7px 0 7px !important;
             }
            
+        }
+
+        .slide.main{
+            img{
+                width: 130px !important;
+            }
         }
     }
 
@@ -1439,10 +1436,6 @@ footer{
 
     #App_store_col{
         margin-bottom: 200px !important;
-    }
-
-    #custumers_img_col{
-        margin: 0 !important;
     }
 
     #fedbacke_col{
