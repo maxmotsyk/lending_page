@@ -693,7 +693,7 @@ section #ready_to_buy_row #send_id_col .send_id {
   display: flex;
   border: 1px solid #b5b5b6;
   border-radius: 30px;
-  padding: 7px 0 7px;
+  padding: 10px 10px 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -701,10 +701,8 @@ section #ready_to_buy_row #send_id_col .send_id {
 }
 
 section #ready_to_buy_row #send_id_col .send_id input {
-  margin-left: 10px;
   background-color: #fbfbfb;
   border: none;
-  margin-left: 7px;
 }
 
 section #ready_to_buy_row #send_id_col .send_id button {
@@ -724,7 +722,6 @@ section #ready_to_buy_row #send_id_col .send_id button {
   background-color: #6fc754;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  margin-right: 7px;
 }
 
 section #ready_to_buy_row #send_id_col .send_id button p {
@@ -1113,7 +1110,7 @@ footer #suscribe_row #send_id_col .send_id {
   display: flex;
   border: 1px solid #b5b5b6;
   border-radius: 30px;
-  padding: 7px 0 7px;
+  padding: 10px 10px 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1121,10 +1118,8 @@ footer #suscribe_row #send_id_col .send_id {
 }
 
 footer #suscribe_row #send_id_col .send_id input {
-  margin-left: 10px;
   background-color: #fbfbfb;
   border: none;
-  margin-left: 7px;
 }
 
 footer #suscribe_row #send_id_col .send_id button {
@@ -1144,7 +1139,6 @@ footer #suscribe_row #send_id_col .send_id button {
   background-color: #6fc754;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  margin-right: 7px;
 }
 
 footer #suscribe_row #send_id_col .send_id button p {
