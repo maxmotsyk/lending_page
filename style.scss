@@ -537,14 +537,16 @@ section{
             margin: 40px 0 40px;
             .send_id{
                 display: flex;
+
                 border: 1px solid #b5b5b6;
                 border-radius: 30px;
-                padding: 10px 10px 10px;
-                justify-content: space-between;
+                padding: 7px 0 7px;
+                justify-content: space-around;
                 width: 370px;
                 
 
                 input{
+                    width:185px;
                     background-color:#fbfbfb;
                     border:none;
                 }
@@ -863,12 +865,13 @@ footer{
 
         #send_id_col{
             margin: 40px 0 40px;
+            
             .send_id{
                 display: flex;
                 border: 1px solid #b5b5b6;
                 border-radius: 30px;
-                padding: 10px 10px 10px;
                 justify-content: space-between;
+                padding: 7px 7px 7px;
                 width: 370px;
                 
 
