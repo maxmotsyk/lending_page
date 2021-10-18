@@ -693,7 +693,7 @@ section #ready_to_buy_row #send_id_col .send_id {
   display: flex;
   border: 1px solid #b5b5b6;
   border-radius: 30px;
-  padding: 7px 0 7px;
+  padding: 7px 7px 7px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 370px;
