@@ -174,7 +174,7 @@ function under_menu_open(child){
 
 let pluss_mass = document.querySelectorAll('#plus_menu');
 
-log(pluss_mass);
+
 for(let i = 0; i < pluss_mass.length;i++){
     pluss_mass[i].addEventListener("click",function(e){
         under_menu_open(this);
