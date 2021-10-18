@@ -44,6 +44,7 @@ header{
     background-position: center;
     background-size: cover;
     .navbar{
+        margin-top: 20px;
         #col_burger_menu{
             display: flex;
             justify-content: flex-start;
@@ -317,12 +318,14 @@ section{
             top:0;
             z-index: -2;
             width: 50%;
+            margin: 180px 0 0;
         }
 
         #text_col1{
             display: flex;
             flex-direction: column;
             padding-left: 100px;
+            margin: 180px 0 0;
 
             h2{
                 margin:  0 0 80px;
@@ -873,7 +876,7 @@ footer{
                 border: 1px solid #b5b5b6;
                 border-radius: 30px;
                 justify-content: space-between;
-                padding: 7px 7px 7px;
+                padding: 7px 7px 7px 10px;
                 width: 370px;
                 
 
@@ -1016,8 +1019,6 @@ footer{
 
             h3{
                 display: flex;
-                justify-content: center;
-                align-items: center;
                 color: #26272d;
                 font-size: 15px;
 
@@ -1027,8 +1028,8 @@ footer{
                     opacity: 0.9;
                     right: 20px;
                     display: none;
-                    width: 12px;
-                    height: 12px;
+                    width: 13.5px;
+                    height: 13.5px;
                     margin: 0 0 0 12px ;
                 }
             }
@@ -1289,7 +1290,7 @@ footer{
         .col-md-2{
             align-items:flex-start !important;
             h3{
-                
+                margin-bottom: 20px !important;
                 font-size: 13px !important;
                 justify-content: space-between;
                 img{

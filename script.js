@@ -26,7 +26,7 @@ const byrgerDoActive = function (iconBurger){
 const iconMenu = document.querySelector('.burger_menu');
 byrgerDoActive(iconMenu);
 
-// slider
+
 
 // do class for sliders
 class Slider {
@@ -64,7 +64,10 @@ class Slider {
         }
     }
 }
+// classEnd
 
+
+// sliderONE
 let img_screen = document.querySelectorAll('.screenImg');
 const slider1 = new Slider(img_screen);
 
@@ -79,19 +82,32 @@ document.getElementById("iphone_screens_row_2").onwheel = function(event){
     }
     return false;
 }
+// sliderONEend
 
-// выввы
-document.getElementById("iphone_screens_row_2").addEventListener("touchend",sosi);
 
-function sosi (event){
-    console.log(event);
+// sliderONEMobileVersion
+document.getElementById("iphone_screens_row_2").addEventListener("touchend",endTouch);
+document.getElementById("iphone_screens_row_2").addEventListener("touchstart",function(e){
+    startTochx = e.changedTouches[0].pageX;
+});
+
+let startTochx = 0;
+function endTouch (event){
+    slider1.imgInMass();
+    if(event.changedTouches[0].pageX > startTochx){
+        slider1.right();
+    }
+    else{
+        slider1.left()
+    }
 }
+// sliderONEMobileVersionEnd
+
+// sliderTWO
 let img_humans = document.querySelectorAll('#humans');
 const slider2 = new Slider(img_humans);
 
 
-
-// ыывы
 document.getElementById('row_left').addEventListener("click",function(e){
     slider2.imgInMass();
     slider2.left();
@@ -101,6 +117,28 @@ document.getElementById('row_right').addEventListener("click",function(e){
     slider2.imgInMass();
     slider2.right();
 });
+// sliderTWOoend
+
+
+// sliderTWOMobileVersion
+document.getElementById("custumers_row").addEventListener("touchstart",function(e){
+    startTochx2 = e.changedTouches[0].pageX;
+});
+document.getElementById("custumers_row").addEventListener("touchend",endTouch2);
+
+let startTochx2 = 0;
+function endTouch2 (event){
+
+    if(event.changedTouches[0].pageX > startTochx2){
+        slider2.imgInMass();
+        slider2.right();
+    }
+    else{
+        slider2.imgInMass();
+        slider2.left();
+    }
+}
+// sliderTWOMobileVersionEnd
 
 
 // movement of cards
@@ -112,11 +150,18 @@ card2.addEventListener("mouseover",function(e){
     card1.classList = ('card1 unactive');
 });
 
+card2.addEventListener("click",function(e){
+    let card1 = document.querySelector('.card1');
+    card2.classList = ('card2 active');
+    card1.classList = ('card1 unactive');
+});
+
 card2.addEventListener("mouseout",function(e){
     let card1 = document.querySelector('.card1');
     card2.classList = ('card2');
     card1.classList = ('card1');
 });
+// movement of cards end
 
 // under_menu
 function under_menu_open(child){
@@ -129,9 +174,10 @@ function under_menu_open(child){
 
 let pluss_mass = document.querySelectorAll('#plus_menu');
 
-console.log(pluss_mass);
+log(pluss_mass);
 for(let i = 0; i < pluss_mass.length;i++){
     pluss_mass[i].addEventListener("click",function(e){
         under_menu_open(this);
     });
 }
+// under_menu end
