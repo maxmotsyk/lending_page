@@ -165,7 +165,7 @@ card2.addEventListener("click",function(e){
     card1.classList = ('card1 unactive');
 });
 
-card1.ddEventListener("mouseout",function(e){
+card1.addEventListener("click",function(e){
     let card1 = document.querySelector('.card1');
     card2.classList = ('card2');
     card1.classList = ('card1');
