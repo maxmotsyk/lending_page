@@ -150,7 +150,7 @@ card2.addEventListener("mouseover",function(e){
     card1.classList = ('card1 unactive');
 });
 
-card2.addEventListener("click",function(e){
+card2.addEventListener("touchstart",function(e){
     let card1 = document.querySelector('.card1');
     card2.classList = ('card2 active');
     card1.classList = ('card1 unactive');
