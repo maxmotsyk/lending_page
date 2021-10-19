@@ -133,10 +133,10 @@ document.getElementById('row_right').addEventListener("click",function(e){
 
 
 // sliderTWOMobileVersion
-document.getElementById("custumers_row").addEventListener("touchstart",function(e){
+document.getElementById("custumers_img_col").addEventListener("touchstart",function(e){
     startTochx2 = e.changedTouches[0].pageX;
 });
-document.getElementById("custumers_row").addEventListener("touchend",endTouch2);
+document.getElementById("custumers_img_col").addEventListener("touchend",endTouch2);
 
 let startTochx2 = 0;
 function endTouch2 (event){
